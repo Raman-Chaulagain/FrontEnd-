@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Shop All</title>
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="shop-all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html" class="active">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="Contact.html" aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="WishList.html" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="hero-section-shop reveal-on-scroll">
+            <div class="breadcrumb">
+                <a href="Home.html">Home</a> / <a href="ShopAll.html">Shop All</a>
+            </div>
+            <span class="sec-tag">THE FRN'S AQUARIUM COLLECTION</span>
+            <h1>Find your element.</h1>
+            <p class="hero-desc">
+                Living color. Thoughtful essentials. A better world for whatever you keep.
+            </p>
+        </section>
+
+        <div class="filter-pills reveal-on-scroll" aria-label="Product categories">
+            <button class="pill active" data-category="all">All products</button>
+            <button class="pill" data-category="fish">Ornamental fish</button>
+            <button class="pill" data-category="plants">Aquatic plants</button>
+            <button class="pill" data-category="aquariums">Aquariums</button>
+            <button class="pill" data-category="equipment">Equipment</button>
+        </div>
+
+        <div class="shop-layout">
+
+            <aside class="sidebar reveal-on-scroll">
+                <div class="filter-header">
+                    <span>FILTER BY</span>
+                    <button type="button" class="reset-link" id="reset-filters">Reset all</button>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Availability</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="stock" checked>
+                        In stock (8)
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="soldout">
+                        Include sold out (0)
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Experience level</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="experience" value="all" checked>
+                        All levels
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="experience" value="beginner">
+                        Beginner friendly
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="experience" value="intermediate">
+                        Intermediate
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Habitat</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="habitat" value="freshwater" checked>
+                        Freshwater
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="habitat" value="saltwater">
+                        Saltwater
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Price range</h3>
+                    <div class="price-inputs">
+                        <span class="price-box">NPR 250</span>
+                        <span class="price-box">NPR 15,000</span>
+                    </div>
+                    <div class="range-slider-mock"></div>
+                </div>
+
+                <div class="help-box">
+                    <div class="help-icon">
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </div>
+                    <div class="help-text">
+                        <strong>Not sure where to start?</strong>
+                        <p>Our aquarists can help you find the right fit for your water setup.</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20need%20help%20choosing%20aquarium%20products"
+                   class="ask-aquarist">
+                    Ask an aquarist <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </aside>
+
+            <section class="product-content">
+
+                <div class="product-sorting-bar reveal-on-scroll">
+                    <span class="showing-text" id="showing-count">Showing 8 of 8 products</span>
+                    <label class="sort-dropdown">
+                        <span>Sort by:</span>
+                        <select id="sort-products" aria-label="Sort products">
+                            <option value="featured">Featured</option>
+                            <option value="low">Price: low to high</option>
+                            <option value="high">Price: high to low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="product-grid" id="product-grid">
+
+                    <article class="product-card reveal-on-scroll"
+                        data-category="fish" data-price="800"
+                        data-name="Emerald Halfmoon Betta" data-level="intermediate"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="betta-emerald" aria-label="Add Emerald Halfmoon Betta to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://i.pinimg.com/736x/76/c5/1c/76c51cf1cd212d9dd9f4259db4adc440.jpg"
+                                alt="Emerald Halfmoon Betta">
+                        </div>
+                        <span class="product-badge">KEEPER FAVORITE</span>
+                        <h3 class="product-title">Emerald Halfmoon Betta</h3>
+                        <p class="product-subtitle">Betta splendens · Male · 1 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 800</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Emerald%20Halfmoon%20Betta"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal-on-scroll"
+                        data-category="plants" data-price="250"
+                        data-name="Anubias Nana Petite" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="anubias-petite" aria-label="Add Anubias Nana Petite to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=700&q=85"
+                                alt="Anubias Nana Petite">
+                        </div>
+                        <span class="product-badge">BEGINNER FRIENDLY</span>
+                        <h3 class="product-title">Anubias Nana Petite</h3>
+                        <p class="product-subtitle">Easy care · Tissue culture cup</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 250</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Anubias%20Nana%20Petite"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal-on-scroll"
+                        data-category="aquariums" data-price="3500"
+                        data-name="Clearview Glass Aquarium" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <a href="Aquariums.html">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjF0yVo4IgfVdcoGYi5VBGbG284mvUAkyjqQe-9bqO4A&s=10"
+                                    alt="Clearview Glass Aquarium">
+                            </a>
+                            <button class="wishlist-btn" type="button"
+                                data-id="clearview-aquarium" aria-label="Add Clearview Glass Aquarium to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <span class="product-badge">THE PERFECT BEGINNING</span>
+                        <h3 class="product-title"><a href="Aquariums.html">Clearview Glass Aquarium</a></h3>
+                        <p class="product-subtitle">60 L · Ultra-clear low-iron glass</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 3,500</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Clearview%20Glass%20Aquarium"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal-on-scroll"
+                        data-category="equipment" data-price="1200"
+                        data-name="Flow 300 Canister Filter" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="flow-filter" aria-label="Add Flow 300 Canister Filter to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ0s_B9dQhP-_u7RiB8uFB5P0cJivmFyDy1yA2x7H9UA&s=10"
+                                alt="Flow 300 Canister Filter">
+                        </div>
+                        <span class="product-badge">QUIET BY DESIGN</span>
+                        <h3 class="product-title">Flow 300 Canister Filter</h3>
+                        <p class="product-subtitle">300 L/h · Quiet external filtration</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 1,200</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Flow%20300%20Canister%20Filter"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal-on-scroll"
+                        data-category="fish" data-price="600"
+                        data-name="Cardinal Tetra School" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="cardinal-tetra" aria-label="Add Cardinal Tetra School to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqxhCSA5zYXIJDQ88Uq_vPpn9y1CZL5EXp1Xr7RWfcfQ&s=10"
+                                alt="Cardinal Tetra">
+                        </div>
+                        <span class="product-badge">COMMUNITY FAVORITE</span>
+                        <h3 class="product-title">Cardinal Tetra School</h3>
+                        <p class="product-subtitle">Paracheirodon axelrodi · 6 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 600</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Cardinal%20Tetra"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal-on-scroll"
+                        data-category="plants" data-price="300"
+                        data-name="Java Fern Trident" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="java-fern" aria-label="Add Java Fern Trident to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKCNCS712eb5qxOCHtXF2k2XmkB0ved6PPJDFhpEFBTQ&s=10"
+                                alt="Java Fern Trident">
+                        </div>
+                        <span class="product-badge">LOW MAINTENANCE</span>
+                        <h3 class="product-title">Java Fern Trident</h3>
+                        <p class="product-subtitle">Low light · Potted plant</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 300</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Java%20Fern"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal-on-scroll"
+                        data-category="equipment" data-price="1800"
+                        data-name="Luma 60 LED Light" data-level="intermediate"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="luma-light" aria-label="Add Luma 60 LED Light to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOAZBkFGNi1S1g00ebha_BfOKGNSNjheGdhmZeuKpsA&s"
+                                alt="Luma 60 LED Light">
+                        </div>
+                        <span class="product-badge">GROW BEAUTIFULLY</span>
+                        <h3 class="product-title">Luma 60 LED Light</h3>
+                        <p class="product-subtitle">Full spectrum · 60 cm · Dimmable</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 1,800</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Luma%2060%20LED%20Light"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal-on-scroll"
+                        data-category="fish" data-price="750"
+                        data-name="Blue Plakat Betta" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="blue-plakat" aria-label="Add Blue Plakat Betta to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5nPTa03Q16YREOdJRUiw9HeCm0G9bLpm2KhvlZob9g&s=10"
+                                alt="Blue Plakat Betta">
+                        </div>
+                        <span class="product-badge">SMALL FINS. BIG CHARACTER.</span>
+                        <h3 class="product-title">Blue Plakat Betta</h3>
+                        <p class="product-subtitle">Betta splendens · Male · 1 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 750</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Blue%20Plakat%20Betta"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="grid-footer-info reveal-on-scroll">
+                    <p>You've explored all 8 carefully chosen essentials.</p>
+                    <a href="#top" class="back-to-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </section>
+        </div>
+
+        <section class="promo-banner reveal-on-scroll">
+            <div class="promo-content">
+                <h2>Your first aquarium? You're in good company.</h2>
+                <p>Start with the right knowledge. The rest grows from there.</p>
+            </div>
+            <a href="OurStory.html" class="promo-btn">
+                Read our beginner guide <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="ShopAll.html?category=fish">Ornamental fish</a>
+                <a href="ShopAll.html?category=plants">Aquatic plants</a>
+                <a href="ShopAll.html?category=aquariums">Aquariums & tanks</a>
+                <a href="ShopAll.html?category=equipment">Equipment & accessories</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="https://wa.me/9779864776061">WhatsApp support</a>
+                <a href="First.html">Aquarium care journal</a>
+                <a href="Question.html">Contact & FAQ</a>
+                <a href="tel:+9779864776061">986-4776061</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="Question.html">Privacy</a>
+                <a href="Question.html">Terms</a>
+                <a href="Question.html">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float"
+       href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium"
+       aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const productGrid = document.querySelector("#product-grid");
+        const products = [...document.querySelectorAll("#product-grid .product-card")];
+        const pills = [...document.querySelectorAll(".pill")];
+        const count = document.querySelector("#showing-count");
+        const sortSelect = document.querySelector("#sort-products");
+        const resetButton = document.querySelector("#reset-filters");
+
+        let activeCategory = "all";
+
+        // Read URL query parameter if present
+        const requestedCategory = new URLSearchParams(window.location.search).get("category");
+        if (["fish", "plants", "aquariums", "equipment"].includes(requestedCategory)) {
+            activeCategory = requestedCategory;
+        }
+
+        function updateProducts() {
+            // Selected experience levels
+            const selectedLevels = [...document.querySelectorAll('input[name="experience"]:checked')]
+                .map(input => input.value);
+
+            // Selected habitats
+            const selectedHabitats = [...document.querySelectorAll('input[name="habitat"]:checked')]
+                .map(input => input.value);
+
+            // Sold out check
+            const includeSoldOut = document.querySelector('input[name="availability"][value="soldout"]')?.checked;
+
+            products.forEach(product => {
+                const cardCat = product.dataset.category;
+                const cardLevel = product.dataset.level;
+                const cardHabitat = product.dataset.habitat;
+                const isStock = product.dataset.stock === "true";
+
+                // 1. Category Pill match
+                const categoryMatch = (activeCategory === "all" || cardCat === activeCategory);
+
+                // 2. Experience Level match (ignore if item has no experience level, e.g. equipment)
+                const levelMatch = selectedLevels.includes("all") || 
+                                   selectedLevels.length === 0 || 
+                                   !cardLevel || 
+                                   selectedLevels.includes(cardLevel);
+
+                // 3. Habitat match (CRITICAL FIX: ignore habitat filtering for non-living items like Equipment/Aquariums)
+                const habitatMatch = selectedHabitats.length === 0 || 
+                                     !cardHabitat || 
+                                     cardCat === "equipment" || 
+                                     cardCat === "aquariums" || 
+                                     selectedHabitats.includes(cardHabitat);
+
+                // 4. Stock match
+                const stockMatch = includeSoldOut || isStock;
+
+                // Set visibility using display flex/none
+                if (categoryMatch && levelMatch && habitatMatch && stockMatch) {
+                    product.style.display = "flex";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+
+            // Count only currently visible products
+            const visibleProducts = products.filter(product => product.style.display !== "none");
+
+            // Sort visible products
+            visibleProducts.sort((a, b) => {
+                const priceA = Number(a.dataset.price) || 0;
+                const priceB = Number(b.dataset.price) || 0;
+                const nameA = a.dataset.name || "";
+                const nameB = b.dataset.name || "";
+
+                switch (sortSelect ? sortSelect.value : "featured") {
+                    case "low":
+                        return priceA - priceB;
+                    case "high":
+                        return priceB - priceA;
+                    case "name":
+                        return nameA.localeCompare(nameB);
+                    default:
+                        return products.indexOf(a) - products.indexOf(b);
+                }
+            });
+
+            // Re-append sorted cards
+            visibleProducts.forEach(product => productGrid.appendChild(product));
+
+            if (count) {
+                count.textContent = `Showing ${visibleProducts.length} of ${products.length} products`;
+            }
+
+            // Update active pill button visual highlight
+            pills.forEach(pill => {
+                const active = pill.dataset.category === activeCategory;
+                pill.classList.toggle("active", active);
+                pill.setAttribute("aria-pressed", String(active));
+            });
+        }
+
+        // Pill Click Event Handler
+        pills.forEach(pill => {
+            pill.addEventListener("click", () => {
+                activeCategory = pill.dataset.category;
+
+                const url = new URL(window.location.href);
+                if (activeCategory === "all") {
+                    url.searchParams.delete("category");
+                } else {
+                    url.searchParams.set("category", activeCategory);
+                }
+                history.replaceState(null, "", url);
+
+                updateProducts();
+            });
+        });
+
+        // Checkbox Experience handlers
+        document.querySelectorAll('input[name="experience"]').forEach(input => {
+            input.addEventListener("change", () => {
+                const allOption = document.querySelector('input[name="experience"][value="all"]');
+
+                if (input.value === "all" && input.checked) {
+                    document.querySelectorAll('input[name="experience"]').forEach(item => {
+                        if (item.value !== "all") item.checked = false;
+                    });
+                } else if (input.checked && allOption) {
+                    allOption.checked = false;
+                }
+
+                const checkedSpecific = [...document.querySelectorAll('input[name="experience"]:checked')]
+                    .filter(item => item.value !== "all");
+
+                if (checkedSpecific.length === 0 && allOption) {
+                    allOption.checked = true;
+                }
+
+                updateProducts();
+            });
+        });
+
+        // Other Checkboxes
+        document.querySelectorAll('input[name="habitat"], input[name="availability"]')
+            .forEach(input => input.addEventListener("change", updateProducts));
+
+        // Sort dropdown change
+        if (sortSelect) sortSelect.addEventListener("change", updateProducts);
+
+        // Reset Filters Button
+        if (resetButton) {
+            resetButton.addEventListener("click", () => {
+                activeCategory = "all";
+
+                document.querySelectorAll('input[name="experience"]').forEach(input => {
+                    input.checked = input.value === "all";
+                });
+
+                document.querySelectorAll('input[name="availability"]').forEach(input => {
+                    input.checked = input.value === "stock";
+                });
+
+                document.querySelectorAll('input[name="habitat"]').forEach(input => {
+                    input.checked = input.value === "freshwater";
+                });
+
+                if (sortSelect) sortSelect.value = "featured";
+
+                const url = new URL(window.location.href);
+                url.searchParams.delete("category");
+                history.replaceState(null, "", url);
+
+                updateProducts();
+            });
+        }
+
+        // Wishlist functionality
+        function getWishlist() {
+            try {
+                return JSON.parse(localStorage.getItem("frnsWishlist") || "[]");
+            } catch {
+                return [];
+            }
+        }
+
+        function updateWishlistButtons() {
+            const wishlist = getWishlist();
+
+            document.querySelectorAll(".wishlist-btn[data-id]").forEach(button => {
+                const saved = wishlist.includes(button.dataset.id);
+                const icon = button.querySelector("i");
+
+                if (icon) {
+                    icon.classList.toggle("fa-solid", saved);
+                    icon.classList.toggle("fa-regular", !saved);
+                    if (saved) icon.style.color = '#e74c3c';
+                    else icon.style.color = '';
+                }
+                button.classList.toggle("is-wishlisted", saved);
+                button.setAttribute("aria-pressed", String(saved));
+            });
+        }
+
+        document.querySelectorAll(".wishlist-btn[data-id]").forEach(button => {
+            button.addEventListener("click", (e) => {
+                e.preventDefault();
+                let wishlist = getWishlist();
+                const id = button.dataset.id;
+
+                wishlist = wishlist.includes(id)
+                    ? wishlist.filter(item => item !== id)
+                    : [...wishlist, id];
+
+                localStorage.setItem("frnsWishlist", JSON.stringify(wishlist));
+                updateWishlistButtons();
+            });
+        });
+
+        // Scroll Reveal
+        const revealItems = document.querySelectorAll(".reveal-on-scroll");
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("revealed");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add("revealed"));
+        }
+
+        // Initialize state
+        updateWishlistButtons();
+        updateProducts();
+    </script>
+
+</body>
+</html>

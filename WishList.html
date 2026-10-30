@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Wishlist</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="wishlist.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" class="active" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        
+        <!-- Hero Section -->
+        <div class="hero-wishlist-section reveal-on-scroll">
+            <div class="breadcrumb"><a href="Home.html">Home</a> / <a href="MyOrder.html">My account</a> /  <a href="WishList.html"></a>Wishlist</div>
+            <p class="wishlist-tag">YOUR WISHLIST</p>
+            <h1>A little room for possibility.</h1>
+            <p class="hero-subtitle">The colors, textures, and quiet little wonders you’re coming back for.</p>
+        </div>
+
+        <!-- Wishlist Info Bar -->
+        <div class="wishlist-info-bar reveal-on-scroll">
+            <span class="favorites-count" id="wishlist-count-label">3 saved favorites · All in stock</span>
+            <div class="wishlist-actions-right">
+                <span class="private-text">Private collection</span>
+                <button type="button" class="share-btn" id="share-wishlist-btn"><i class="fa-solid fa-share-nodes"></i> Share wishlist</button>
+            </div>
+        </div>
+
+        <!-- Wishlist Product Grid (3 columns) -->
+        <div class="wishlist-grid" id="wishlist-grid-container">
+            
+            <!-- Item 1 -->
+            <div class="wishlist-card reveal-on-scroll">
+                <div class="card-img-wrap">
+                    <button type="button" class="remove-item-btn" aria-label="Remove Emerald Halfmoon Betta from wishlist"><i class="fa-solid fa-xmark"></i></button>
+                    <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&w=700&q=85" alt="Emerald Halfmoon Betta">
+                </div>
+                <span class="product-badge">KEEPER FAVORITE</span>
+                <h3 class="product-title">Emerald Halfmoon Betta</h3>
+                <p class="product-subtitle">Betta splendens · Male · 1 fish</p>
+                <div class="price-stock-row">
+                    <span class="price">NPR 800</span>
+                    <span class="stock-status">In stock</span>
+                </div>
+                <p class="card-note">Live arrival guaranteed · Carefully packed</p>
+                <button type="button" class="move-to-bag-btn">Enquire / Move to bag <i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="wishlist-card reveal-on-scroll">
+                <div class="card-img-wrap">
+                    <button type="button" class="remove-item-btn" aria-label="Remove Anubias Nana Petite from wishlist"><i class="fa-solid fa-xmark"></i></button>
+                    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=700&q=85" alt="Anubias Nana Petite">
+                </div>
+                <span class="product-badge">BEGINNER FRIENDLY</span>
+                <h3 class="product-title">Anubias Nana Petite</h3>
+                <p class="product-subtitle">Easy care · Tissue culture cup</p>
+                <div class="price-stock-row">
+                    <span class="price">NPR 250</span>
+                    <span class="stock-status">In stock</span>
+                </div>
+                <p class="card-note">Ready for your next chapter · In stock</p>
+                <button type="button" class="move-to-bag-btn">Enquire / Move to bag <i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="wishlist-card reveal-on-scroll">
+                <div class="card-img-wrap">
+                    <button type="button" class="remove-item-btn" aria-label="Remove Clearview Glass Aquarium from wishlist"><i class="fa-solid fa-xmark"></i></button>
+                    <a href="Aquariums.html">
+                        <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=700&q=85" alt="Clearview Glass Aquarium">
+                    </a>
+                </div>
+                <span class="product-badge">THE PERFECT BEGINNING</span>
+                <h3 class="product-title"><a href="Aquariums.html">Clearview Glass Aquarium</a></h3>
+                <p class="product-subtitle">60 L · Ultra-clear low-iron glass</p>
+                <div class="price-stock-row">
+                    <span class="price">NPR 3,500</span>
+                    <span class="stock-status">In stock</span>
+                </div>
+                <p class="card-note">Ready for your next chapter · In stock</p>
+                <button type="button" class="move-to-bag-btn">Enquire / Move to bag <i class="fa-solid fa-plus"></i></button>
+            </div>
+
+        </div>
+
+        <p class="dispatch-warning-note reveal-on-scroll">Saving an item doesn’t reserve it. Livestock availability is confirmed before dispatch.</p>
+
+        <!-- Inspiration Promo Banner -->
+        <div class="inspiration-banner reveal-on-scroll">
+            <div class="promo-img-wrap">
+                <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=900&q=85" alt="Aquascape aquarium inspiration">
+            </div>
+            <div class="promo-text-content">
+                <span class="promo-tag">DREAM IT. GROW IT.</span>
+                <h2>Good things begin with a little inspiration.</h2>
+                <p>Turn your saved favorites into a thriving freshwater world. Our care guide will help you bring it all together.</p>
+                <a href="OurStory.html" class="promo-link">Explore the beginner’s guide <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Plants.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="OurStory.html">The journal</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="https://wa.me/9779864776061">WhatsApp support</a>
+                <a href="OurStory.html">Aquarium care journal</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact us</a>
+                <a href="tel:+9779864776061">986-4776061</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const countLabel = document.getElementById('wishlist-count-label');
+
+        function updateWishlistCount() {
+            const currentCards = document.querySelectorAll('.wishlist-card');
+            const count = currentCards.length;
+            if (count > 0) {
+                countLabel.textContent = `${count} saved favorite${count === 1 ? '' : 's'} · All in stock`;
+            } else {
+                countLabel.textContent = '0 saved favorites';
+                document.getElementById('wishlist-grid-container').innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--muted);">
+                        <i class="fa-regular fa-heart" style="font-size: 3rem; color: var(--subtle); margin-bottom: 15px;"></i>
+                        <h2>Your wishlist is currently empty.</h2>
+                        <p style="margin-top: 8px;"><a href="ShopAll.html" style="color: var(--green); text-decoration: underline;">Explore our collection</a> to add your favorites.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Remove Item Action
+        document.querySelectorAll('.remove-item-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.wishlist-card');
+                if (card) {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(-10px)';
+                    card.style.transition = 'all 0.3s ease';
+                    setTimeout(() => {
+                        card.remove();
+                        updateWishlistCount();
+                    }, 300);
+                }
+            });
+        });
+
+        // Share Link Action
+        document.getElementById('share-wishlist-btn').addEventListener('click', () => {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(window.location.href);
+                alert('Wishlist link copied to clipboard!');
+            } else {
+                alert('Wishlist URL: ' + window.location.href);
+            }
+        });
+
+        // Move To Bag Buttons
+        document.querySelectorAll('.move-to-bag-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                window.location.href = 'https://wa.me/9779864776061?text=Hello%2C%20I%20want%20to%20order%20an%20item%20from%20my%20wishlist';
+            });
+        });
+
+        // Reveal on scroll
+        const revealItems = document.querySelectorAll('.reveal-on-scroll');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('revealed'));
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Contact & FAQ</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Almost.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        
+        <!-- Breadcrumb & Hero -->
+        <div class="hero-section reveal-on-scroll">
+            <div class="breadcrumb"><a href="Home.html">Home</a> / Contact & FAQ</div>
+            <p class="hero-tag">WE’RE IN YOUR CORNER</p>
+            <h1>Good questions. Real people.</h1>
+            <p class="hero-subtitle">From your first tank to a question about your order, our aquarists are here to help.</p>
+        </div>
+
+        <!-- Section 1: Contact Form & Sidebar Support Grid -->
+        <section class="contact-grid-section">
+            
+            <!-- Left: Contact Form -->
+            <div class="contact-form-card reveal-on-scroll">
+                <h2>Send a little note.</h2>
+                <p class="form-reply-note">We usually reply within a few hours.</p>
+
+                <form id="contact-form">
+                    <div class="form-row-2">
+                        <div class="input-group">
+                            <label for="contact-name">Your name *</label>
+                            <input type="text" id="contact-name" value="Aarav Sharma" class="text-input" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="contact-email">Email address *</label>
+                            <input type="email" id="contact-email" value="customer@example.com" class="text-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="input-group">
+                            <label for="contact-subject">What can we help with? *</label>
+                            <div class="select-wrapper">
+                                <select id="contact-subject" class="text-input">
+                                    <option>My order</option>
+                                    <option>Fish & plant care advice</option>
+                                    <option>Custom aquarium setup</option>
+                                    <option>Other inquiry</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="contact-order-no">Order number (optional)</label>
+                            <input type="text" id="contact-order-no" value="FRN-10482" class="text-input">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="contact-message">Your message *</label>
+                        <textarea id="contact-message" class="text-input textarea-input" required>Hi Frn's Aquarium! I've just ordered a Clearview 60 Glass Aquarium and would love a little advice on setting up my first planted aquarium in Hetauda. Is Anubias a good choice for a beginner?</textarea>
+                    </div>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked required> I agree to being contacted regarding this message.
+                    </label>
+
+                    <button type="submit" class="send-msg-btn">Send message <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+
+            <!-- Right: Support Info Sidebar -->
+            <div class="contact-sidebar reveal-on-scroll">
+                
+                <div class="support-info-box">
+                    <span class="support-box-tag">LET'S TALK WATER</span>
+                    
+                    <div class="support-item">
+                        <div class="sup-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div>
+                            <span class="sup-title">Email our aquarists</span>
+                            <a href="mailto:Frnsaqua@gmail.com" class="sup-val-link">Frnsaqua@gmail.com</a>
+                            <p class="sup-subtext">Order questions, care advice, and everything between.</p>
+                        </div>
+                    </div>
+
+                    <div class="support-item">
+                        <div class="sup-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <span class="sup-title">Give us a call / WhatsApp</span>
+                            <a href="tel:+9779864776061" class="sup-val-link">+977 9864776061</a>
+                            <p class="sup-subtext">Everyday · 9 am–7 pm NPT</p>
+                        </div>
+                    </div>
+
+                    <div class="support-item last">
+                        <div class="sup-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <span class="sup-title">A quick question?</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium" class="sup-val-link">Start WhatsApp Chat <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <p class="sup-subtext">Direct advice for your aquarium setup.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alert Callout Box -->
+                <div class="arrival-alert-box">
+                    <div class="alert-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <div>
+                        <strong>Something not quite right on arrival?</strong>
+                        <p>Message us photos on WhatsApp or email within two hours of delivery so we can assist immediately.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Section 2: FAQ Accordions -->
+        <section class="faq-section reveal-on-scroll">
+            
+            <div class="faq-left-col">
+                <span class="hero-tag">A LITTLE CLARITY</span>
+                <h2>Before you dive in.</h2>
+                <p>The answers to a few things our fellow keepers ask most often.</p>
+
+                <div class="faq-categories" id="faq-category-filters">
+                    <a href="#" class="faq-cat-link active" data-filter="all">All questions</a>
+                    <a href="#" class="faq-cat-link" data-filter="shipping">Shipping & arrival</a>
+                    <a href="#" class="faq-cat-link" data-filter="returns">Returns & orders</a>
+                    <a href="#" class="faq-cat-link" data-filter="care">Care & compatibility</a>
+                </div>
+            </div>
+
+            <div class="faq-right-col">
+                
+                <!-- FAQ Item 1 -->
+                <div class="faq-item open" data-category="shipping">
+                    <div class="faq-question-row">
+                        <h3>How do you ship fish and plants safely?</h3>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Fish travel in insulated packaging with oxygen and temperature control packs when needed. Livestock and fragile plants are insulated and packed fresh for delivery across Nepal.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" data-category="shipping">
+                    <div class="faq-question-row">
+                        <h3>What is your live-arrival guarantee?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>We guarantee healthy arrival. If a fish or plant arrives in poor condition, WhatsApp or email clear photos within two hours of delivery for a quick resolution.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" data-category="shipping">
+                    <div class="faq-question-row">
+                        <h3>When will my order arrive?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Orders in Hetauda are often delivered same-day or next-day. Delivery to other cities across Nepal takes 2–4 business days via express courier.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" data-category="returns">
+                    <div class="faq-question-row">
+                        <h3>Can I return equipment or an aquarium?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Unused dry goods in original packaging can be returned within 7 days. Contact us first for instructions. Live fish and tissue plants cannot be returned once delivered.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item" data-category="care">
+                    <div class="faq-question-row">
+                        <h3>How do I know which fish are right for my tank?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Tell us your tank volume, water filter setup, and current residents. We’ll help you choose compatible species and sensible stocking levels.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item" data-category="returns">
+                    <div class="faq-question-row">
+                        <h3>Can I change or cancel my order?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer" style="display: none;">
+                        <p>Contact us as soon as possible via phone or WhatsApp (+977 9864776061). We can make changes before your order leaves our shop.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Section 3: Hetauda Store Banner -->
+        <section class="studio-banner reveal-on-scroll">
+            <div class="studio-img-wrap">
+                <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=800&q=85" alt="Frn's Aquarium Showroom Hetauda">
+            </div>
+            <div class="studio-text-content">
+                <span class="hero-tag">COME TALK TANKS</span>
+                <h2>Our Hetauda showroom.</h2>
+                <p class="studio-address">School Road, Ward No. 4<br>Hetauda, Nepal</p>
+                
+                <p class="studio-hours">
+                    Sun–Fri 9:00 am–7:00 pm NPT<br>
+                    Local pickup and live tank consultation available during store hours.
+                </p>
+
+                <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20would%20like%20to%20visit%20your%20Hetauda%20store" class="studio-dir-link">Contact for directions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="#">Ornamental fish</a>
+                <a href="#">Aquatic plants</a>
+                <a href="Clear.html">Aquariums & tanks</a>
+                <a href="First.html">The journal</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="https://wa.me/9779864776061">WhatsApp support</a>
+                <a href="Aquariums.html">Aquarium care journal</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact us</a>
+                <a href="tel:+9779864776061">986-4776061</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for reaching out! Our aquarists will reply shortly via email/WhatsApp.');
+        });
+
+        // FAQ Accordion Toggle
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const header = item.querySelector('.faq-question-row');
+            header.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                
+                // Close all other items
+                faqItems.forEach(i => {
+                    i.classList.remove('open');
+                    const ans = i.querySelector('.faq-answer');
+                    if (ans) ans.style.display = 'none';
+                    const icon = i.querySelector('.faq-question-row i');
+                    if (icon) icon.className = 'fa-solid fa-plus';
+                });
+
+                if (!isOpen) {
+                    item.classList.add('open');
+                    const answer = item.querySelector('.faq-answer');
+                    if (answer) answer.style.display = 'block';
+                    const icon = item.querySelector('.faq-question-row i');
+                    if (icon) icon.className = 'fa-solid fa-minus';
+                }
+            });
+        });
+
+        // FAQ Category Filter
+        const catLinks = document.querySelectorAll('.faq-cat-link');
+        catLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                catLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+
+                const filter = link.getAttribute('data-filter');
+                faqItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Scroll Reveal
+        const revealItems = document.querySelectorAll('.reveal-on-scroll');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('revealed'));
+        }
+    </script>
+
+</body>
+</html>

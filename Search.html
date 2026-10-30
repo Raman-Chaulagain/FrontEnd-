@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Search: betta</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="search.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search" class="active"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-container">
+        
+        <!-- Breadcrumb & Hero -->
+        <div class="hero-search-section reveal-on-scroll">
+            <div class="breadcrumb"><a href="Home.html">Home</a> / Search</div>
+            <p class="collection-tag">FIND YOUR NEXT DISCOVERY</p>
+            <h1>What’s beneath the surface?</h1>
+            
+            <!-- Search Bar Input Box -->
+            <div class="search-input-wrapper">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" value="betta" id="search-field" class="search-input" aria-label="Search query" placeholder="Search fish, plants, aquariums...">
+                <i class="fa-solid fa-xmark clear-icon" id="clear-search-btn" aria-label="Clear search input"></i>
+            </div>
+        </div>
+
+        <!-- Filter / Results Count Pills Bar -->
+        <div class="filter-pills reveal-on-scroll">
+            <button class="pill active" data-filter="all">All results - 4</button>
+            <button class="pill" data-filter="products">Products - 2</button>
+            <button class="pill" data-filter="guides">Guides - 2</button>
+        </div>
+
+        <!-- Results Counter & Sorting -->
+        <div class="results-sorting-bar reveal-on-scroll">
+            <span class="showing-text" id="results-count-label">4 results for "betta"</span>
+            <div class="sort-dropdown">
+                <span>Sort by: Most relevant</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- Search Layout Grid (Products + Journal Articles) -->
+        <div class="search-results-grid">
+            
+            <!-- PRODUCTS SECTION -->
+            <div class="section-column products-column reveal-on-scroll" id="products-section">
+                <div class="column-heading">PRODUCTS / 02</div>
+                
+                <div class="products-grid-inner">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" aria-label="Add Emerald Halfmoon Betta to wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&w=700&q=85" alt="Emerald Halfmoon Betta">
+                        </div>
+                        <span class="product-badge">KEEPER FAVORITE</span>
+                        <h3 class="product-title">Emerald Halfmoon Betta</h3>
+                        <p class="product-subtitle">Betta splendens · Male · 1 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 800</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Emerald%20Halfmoon%20Betta" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" aria-label="Add Blue Plakat Betta to wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=700&q=85" alt="Blue Plakat Betta">
+                        </div>
+                        <span class="product-badge">SMALL FINS. BIG CHARACTER.</span>
+                        <h3 class="product-title">Blue Plakat Betta</h3>
+                        <p class="product-subtitle">Betta splendens · Male · 1 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 750</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Blue%20Plakat%20Betta" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JOURNAL GUIDES SECTION -->
+            <div class="section-column journal-column reveal-on-scroll" id="journal-section">
+                <div class="column-heading">FROM THE JOURNAL / 02</div>
+                
+                <div class="journal-grid-inner">
+                    <!-- Journal Article 1 -->
+                    <div class="journal-card">
+                        <div class="journal-img-wrap">
+                            <a href="OurStory.html">
+                                <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&w=700&q=85" alt="A better home for your betta">
+                            </a>
+                        </div>
+                        <span class="journal-meta">FISH CARE · 6 MIN READ</span>
+                        <h3 class="journal-title"><a href="OurStory.html">A better home for your betta.</a></h3>
+                        <p class="journal-desc">Warm water, gentle flow, and room to explore. The essentials for a thriving betta.</p>
+                        <a href="OurStory.html" class="read-guide">Read guide <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+
+                    <!-- Journal Article 2 -->
+                    <div class="journal-card">
+                        <div class="journal-img-wrap">
+                            <a href="OurStory.html">
+                                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=700&q=85" alt="Choosing your first betta companion">
+                            </a>
+                        </div>
+                        <span class="journal-meta">KEEPER NOTES · 5 MIN READ</span>
+                        <h3 class="journal-title"><a href="OurStory.html">Choosing your first betta companion.</a></h3>
+                        <p class="journal-desc">Learn about temperament, tank mates, and why a peaceful home begins with a plan.</p>
+                        <a href="OurStory.html" class="read-guide">Read guide <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Help Bar Footer Banner -->
+        <div class="help-bar reveal-on-scroll">
+            <span>Looking for something specific? Our aquarists know a thing or two.</span>
+            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20have%20a%20question%20about%20your%20products" class="ask-question">Ask us a question <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Fish.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="OurStory.html">The journal</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="https://wa.me/9779864776061">WhatsApp support</a>
+                <a href="Aquariums.html">Aquarium care journal</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact us</a>
+                <a href="tel:+9779864776061">986-4776061</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const searchInput = document.getElementById('search-field');
+        const clearBtn = document.getElementById('clear-search-btn');
+        const resultsLabel = document.getElementById('results-count-label');
+        const pills = document.querySelectorAll('.pill');
+        const productsColumn = id => document.getElementById('products-section');
+        const journalColumn = id => document.getElementById('journal-section');
+
+        // Clear Search Function
+        clearBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            searchInput.focus();
+            resultsLabel.textContent = 'Showing all available suggestions';
+        });
+
+        // Search Input Change
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.trim();
+            if (query.length > 0) {
+                resultsLabel.textContent = `Results for "${query}"`;
+            } else {
+                resultsLabel.textContent = 'Showing all available suggestions';
+            }
+        });
+
+        // Filter Pills Switcher
+        pills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                pills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                
+                const filter = pill.getAttribute('data-filter');
+                const prodSec = document.getElementById('products-section');
+                const jourSec = document.getElementById('journal-section');
+
+                if (filter === 'products') {
+                    prodSec.style.display = 'block';
+                    jourSec.style.display = 'none';
+                } else if (filter === 'guides') {
+                    prodSec.style.display = 'none';
+                    jourSec.style.display = 'block';
+                } else {
+                    prodSec.style.display = 'block';
+                    jourSec.style.display = 'block';
+                }
+            });
+        });
+
+        // Wishlist Toggles
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const icon = btn.querySelector('i');
+                const active = icon.classList.toggle('fa-solid');
+                icon.classList.toggle('fa-regular', !active);
+            });
+        });
+
+        // Reveal on scroll
+        const revealItems = document.querySelectorAll('.reveal-on-scroll');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('revealed'));
+        }
+    </script>
+
+</body>
+</html>

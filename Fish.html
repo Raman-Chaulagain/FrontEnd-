@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Fish</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="fish.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html" class="active">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-section-shop reveal-on-scroll">
+            <div class="breadcrumb">
+                <a href="Home.html">Home</a> / <a href="Fish.html">Fish</a>
+            </div>
+            <span class="sec-tag">THE FRN'S AQUARIUM COLLECTION</span>
+            <h1>Colour, Life & Fins</h1>
+            <p class="hero-desc">
+                Discover beautiful ornamental fish and find the perfect aquatic companions for your underwater world.
+            </p>
+        </section>
+
+        <!-- Filter Pills Category Selection -->
+        <div class="filter-pills reveal-on-scroll" aria-label="Fish categories">
+            <button class="pill active" data-category="all">All Fish</button>
+            <button class="pill" data-category="betta">Betta Fish</button>
+            <button class="pill" data-category="tropical">Tropical Fish</button>
+            <button class="pill" data-category="community">Community Fish</button>
+        </div>
+
+        <div class="shop-layout">
+
+            <!-- Sidebar Filters -->
+            <aside class="sidebar reveal-on-scroll">
+                <div class="filter-header">
+                    <span>FILTER BY</span>
+                    <button type="button" class="reset-link" id="reset-filters">Reset all</button>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Availability</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="stock" checked>
+                        In stock (6)
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="soldout">
+                        Include sold out (0)
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Experience level</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="experience" value="all" checked>
+                        All levels
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="experience" value="beginner">
+                        Beginner friendly
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="experience" value="intermediate">
+                        Intermediate
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Habitat</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="habitat" value="freshwater" checked>
+                        Freshwater
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="habitat" value="saltwater">
+                        Saltwater
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Price range</h3>
+                    <div class="price-inputs">
+                        <span class="price-box">NPR 120</span>
+                        <span class="price-box">NPR 750</span>
+                    </div>
+                    <div class="range-slider-mock"></div>
+                </div>
+
+                <div class="help-box">
+                    <div class="help-icon">
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </div>
+                    <div class="help-text">
+                        <strong>Not sure where to start?</strong>
+                        <p>Our aquarists can help you find the right fish for your tank set up.</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20need%20help%20choosing%20ornamental%20fish"
+                   class="ask-aquarist">
+                    Ask an aquarist <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </aside>
+
+            <!-- Main Product Section -->
+            <section class="product-content">
+
+                <div class="product-sorting-bar reveal-on-scroll">
+                    <span class="showing-text">Showing <span id="item-count">6</span> of 6 fish</span>
+                    <label class="sort-dropdown">
+                        <span>Sort by:</span>
+                        <select id="sort-products" aria-label="Sort products">
+                            <option value="featured">Featured</option>
+                            <option value="low">Price: low to high</option>
+                            <option value="high">Price: high to low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="product-grid" id="product-grid">
+
+                    <!-- Item 1: Halfmoon Betta -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="betta" data-price="650"
+                        data-name="Halfmoon Betta" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="halfmoon-betta" aria-label="Add Halfmoon Betta to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7J9tWlLqxYl6qUOnemIwelkMwkUWTy5IxAEYJUjvJFA&s=10"
+                                alt="Halfmoon Betta">
+                        </div>
+                        <span class="product-badge">POPULAR</span>
+                        <h3 class="product-title">Halfmoon Betta</h3>
+                        <p class="product-subtitle">Betta splendens · Male · 1 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 650</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Halfmoon%20Betta"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 2: Fancy Guppy -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="tropical" data-price="150"
+                        data-name="Fancy Guppy" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="fancy-guppy" aria-label="Add Fancy Guppy to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJAHELVG0YzWtbCS9grOsW8jW5Ydv8xJtNWS8Afu1MWQ&s=10"
+                                alt="Fancy Guppy">
+                        </div>
+                        <span class="product-badge">COLOURFUL</span>
+                        <h3 class="product-title">Fancy Guppy</h3>
+                        <p class="product-subtitle">Poecilia reticulata · Group of 3</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 150</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Fancy%20Guppy"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 3: Neon Tetra -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="community" data-price="120"
+                        data-name="Neon Tetra" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="neon-tetra" aria-label="Add Neon Tetra to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR85qYfuGBfz3xwKoDJyyoitS1W0fsS29iuXjZ2mJM82w&s=10"
+                                alt="Neon Tetra">
+                        </div>
+                        <span class="product-badge">COMMUNITY FAVORITE</span>
+                        <h3 class="product-title">Neon Tetra</h3>
+                        <p class="product-subtitle">Paracheirodon innesi · 1 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 120</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Neon%20Tetra"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 4: Fancy Goldfish -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="tropical" data-price="350"
+                        data-name="Fancy Goldfish" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="fancy-goldfish" aria-label="Add Fancy Goldfish to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQxppJLxWez626BKedlbP7pFj1j1gbGd7CWcLglFpJg&s=10"
+                                alt="Fancy Goldfish">
+                        </div>
+                        <span class="product-badge">CLASSIC BEAUTY</span>
+                        <h3 class="product-title">Fancy Goldfish</h3>
+                        <p class="product-subtitle">Carassius auratus · 1 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 350</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Fancy%20Goldfish"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 5: Molly Fish -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="community" data-price="180"
+                        data-name="Molly Fish" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="molly-fish" aria-label="Add Molly Fish to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5LIntaQsO19_etIKcpuGecwWbhrmay7QmhbYAr3Rn8g&s=10"
+                                alt="Molly Fish">
+                        </div>
+                        <span class="product-badge">PEACEFUL & ACTIVE</span>
+                        <h3 class="product-title">Molly Fish</h3>
+                        <p class="product-subtitle">Poecilia sphenops · 1 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 180</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Molly%20Fish"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 6: Blue Plakat Betta -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="betta" data-price="750"
+                        data-name="Blue Plakat Betta" data-level="beginner"
+                        data-habitat="freshwater" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="blue-plakat" aria-label="Add Blue Plakat Betta to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5nPTa03Q16YREOdJRUiw9HeCm0G9bLpm2KhvlZob9g&s=10"
+                                alt="Blue Plakat Betta">
+                        </div>
+                        <span class="product-badge">SMALL FINS. BIG CHARACTER.</span>
+                        <h3 class="product-title">Blue Plakat Betta</h3>
+                        <p class="product-subtitle">Betta splendens · Male · 1 fish</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 750</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Blue%20Plakat%20Betta"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="grid-footer-info reveal-on-scroll">
+                    <p>You've explored all 6 carefully selected ornamental fish.</p>
+                    <a href="#top" class="back-to-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Promo Banner -->
+        <section class="promo-banner reveal-on-scroll">
+            <div class="promo-content">
+                <h2>Your first aquarium? You're in good company.</h2>
+                <p>Start with the right knowledge. The rest grows from there.</p>
+            </div>
+            <a href="JustStart.html" class="promo-btn">
+                Read our care guide <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>
+                    Your little underwater world starts here.
+                    Explore ornamental fish, aquatic plants,
+                    aquariums, and equipment chosen for your aquatic life.
+                </p>
+                <span class="footer-location">
+                    School Road, Hetauda, Nepal
+                </span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Fish.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="OurStory.html">The journal</a>
+                <a href="OurStory.html">Our story</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="Contact.html">Contact & FAQ</a>
+                <a href="OurStory.html">Aquarium care journal</a>
+                <a href="Cart.html">My account</a>
+                <a href="WishList.html">Wishlist</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">
+                    Get in touch for product updates and aquarium advice.
+                </p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="Contact.html">Privacy</a>
+                <a href="Contact.html">Terms</a>
+                <a href="Contact.html">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a class="whatsapp-float"
+       href="https://wa.me/9779864776061?text=Hello%20Frn%27s%20Aquarium%2C%20I%20have%20a%20question%20about%20fish"
+       aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const pills = document.querySelectorAll('.pill');
+            const cards = document.querySelectorAll('.product-card');
+            const countSpan = document.getElementById('item-count');
+            const sortSelect = document.getElementById('sort-products');
+            const grid = document.getElementById('product-grid');
+            const resetBtn = document.getElementById('reset-filters');
+            const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+
+            // Current state variables
+            let selectedCategory = 'all';
+
+            // Filter logic
+            function filterProducts() {
+                let visibleCount = 0;
+
+                // Check active sidebar checkboxes
+                const selectedLevels = Array.from(document.querySelectorAll('input[name="experience"]:checked')).map(cb => cb.value);
+                const selectedHabitats = Array.from(document.querySelectorAll('input[name="habitat"]:checked')).map(cb => cb.value);
+
+                cards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+                    const cardLevel = card.dataset.level;
+                    const cardHabitat = card.dataset.habitat;
+
+                    const matchCategory = (selectedCategory === 'all' || cardCategory === selectedCategory);
+                    const matchLevel = (selectedLevels.includes('all') || selectedLevels.includes(cardLevel) || selectedLevels.length === 0);
+                    const matchHabitat = (selectedHabitats.length === 0 || selectedHabitats.includes(cardHabitat));
+
+                    if (matchCategory && matchLevel && matchHabitat) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (countSpan) countSpan.textContent = visibleCount;
+            }
+
+            // Category Pill Clicking
+            pills.forEach(pill => {
+                pill.addEventListener('click', () => {
+                    pills.forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+                    selectedCategory = pill.dataset.category;
+                    filterProducts();
+                });
+            });
+
+            // Checkbox Listeners
+            document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(cb => {
+                cb.addEventListener('change', filterProducts);
+            });
+
+            // Reset Filters Button
+            if (resetBtn) {
+                resetBtn.addEventListener('click', () => {
+                    selectedCategory = 'all';
+                    pills.forEach(p => p.classList.remove('active'));
+                    if (pills[0]) pills[0].classList.add('active');
+
+                    document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(cb => {
+                        if (cb.value === 'stock' || cb.value === 'all' || cb.value === 'freshwater') {
+                            cb.checked = true;
+                        } else {
+                            cb.checked = false;
+                        }
+                    });
+
+                    sortSelect.value = 'featured';
+                    filterProducts();
+                });
+            }
+
+            // Sorting Products
+            if (sortSelect && grid) {
+                sortSelect.addEventListener('change', () => {
+                    const val = sortSelect.value;
+                    const cardsArray = Array.from(cards);
+
+                    cardsArray.sort((a, b) => {
+                        const priceA = parseFloat(a.dataset.price) || 0;
+                        const priceB = parseFloat(b.dataset.price) || 0;
+                        const nameA = a.dataset.name.toLowerCase();
+                        const nameB = b.dataset.name.toLowerCase();
+
+                        if (val === 'low') return priceA - priceB;
+                        if (val === 'high') return priceB - priceA;
+                        if (val === 'name') return nameA.localeCompare(nameB);
+                        return 0; // Default or 'featured'
+                    });
+
+                    cardsArray.forEach(card => grid.appendChild(card));
+                });
+            }
+
+            // Wishlist Toggle
+            wishlistBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const icon = btn.querySelector('i');
+                    if (icon) {
+                        if (icon.classList.contains('fa-regular')) {
+                            icon.classList.remove('fa-regular');
+                            icon.classList.add('fa-solid');
+                            icon.style.color = '#e74c3c';
+                        } else {
+                            icon.classList.remove('fa-solid');
+                            icon.classList.add('fa-regular');
+                            icon.style.color = '';
+                        }
+                    }
+                });
+            });
+
+            // Intersection Observer for Scroll Reveal
+            const revealItems = document.querySelectorAll('.reveal-on-scroll');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('revealed');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                revealItems.forEach(item => observer.observe(item));
+            } else {
+                revealItems.forEach(item => item.classList.add('revealed'));
+            }
+        });
+    </script>
+
+</body>
+</html>

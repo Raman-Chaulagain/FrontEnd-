@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Checkout</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="checkout.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar (Secure Checkout Header) -->
+
+    
+<header class="navbar">
+    <a href="Home.html" class="logo">Frn's Aquarium</a>
+
+    <nav class="nav-center">
+        <a href="ShopAll.html">Shop All</a>
+        <a href="Fish.html">Fish</a>
+        <a href="Plants.html">Plants</a>
+        <a href="Aquariums.html">Aquariums</a>
+        <a href="Equipments.html">Equipment</a>
+        <a href="JustStart.html">The Journal</a>
+    </nav>
+
+    <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+</header>
+
+
+    <!-- Main Container -->
+    <main class="main-container">
+        
+        <!-- Hero Section -->
+        <div class="hero-checkout-section reveal-on-scroll">
+            <div class="breadcrumb"><a href="CheckOut.html">Bag</a> / Checkout / Confirmation</div>
+            <h1>Almost in your element.</h1>
+            <p class="hero-subtitle">A few details, then we’ll take care of the rest.</p>
+        </div>
+
+        <!-- Checkout Layout Grid -->
+        <div class="checkout-layout">
+            
+            <!-- Left Side: Form Steps -->
+            <div class="checkout-form-column">
+                
+                <!-- Step 01: Contact -->
+                <div class="form-section-card reveal-on-scroll">
+                    <div class="step-title">
+                        <span class="step-number">01</span> Contact
+                    </div>
+                    <p class="step-subtext">Already a keeper? Sign in for faster checkout.</p>
+                    
+                    <div class="input-group">
+                        <label for="email-address">Email address</label>
+                        <input type="email" id="email-address" value="customer@example.com" class="text-input">
+                    </div>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> Send me new arrivals and care notes. Optional, always.
+                    </label>
+                </div>
+
+                <!-- Step 02: Delivery Address -->
+                <div class="form-section-card reveal-on-scroll">
+                    <div class="step-title">
+                        <span class="step-number">02</span> Delivery address
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="input-group">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" value="Aarav" class="text-input">
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" value="Sharma" class="text-input">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="country-region">Country / region</label>
+                        <div class="select-wrapper">
+                            <select id="country-region" class="text-input">
+                                <option>Nepal</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="street-address">Street address / Location</label>
+                        <input type="text" id="street-address" value="School Road, Ward No. 4" class="text-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="apt-suite">Landmark / Building (optional)</label>
+                        <input type="text" id="apt-suite" value="Near Central Plaza" class="text-input">
+                    </div>
+
+                    <div class="form-row-3">
+                        <div class="input-group">
+                            <label for="city-input">City / District</label>
+                            <input type="text" id="city-input" value="Hetauda" class="text-input">
+                        </div>
+                        <div class="input-group">
+                            <label for="state-select">Province</label>
+                            <div class="select-wrapper">
+                                <select id="state-select" class="text-input">
+                                    <option>Bagmati Province</option>
+                                    <option>Gandaki Province</option>
+                                    <option>Koshi Province</option>
+                                    <option>Lumbini Province</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="zip-code">Postal code</label>
+                            <input type="text" id="zip-code" value="44107" class="text-input">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone-input">Phone · For delivery updates</label>
+                        <input type="text" id="phone-input" value="+977 9864776061" class="text-input">
+                    </div>
+                </div>
+
+                <!-- Step 03: Shipping Method -->
+                <div class="form-section-card reveal-on-scroll">
+                    <div class="step-title">
+                        <span class="step-number">03</span> Shipping method
+                    </div>
+
+                    <div class="radio-card active" data-shipping="250">
+                        <div class="radio-info">
+                            <span class="radio-dot"></span>
+                            <div>
+                                <strong>Standard delivery across Nepal</strong>
+                                <p>Arrives in 2–4 business days · Carefully insulated</p>
+                            </div>
+                        </div>
+                        <span class="shipping-price">NPR 250</span>
+                    </div>
+
+                    <div class="radio-card" data-shipping="450">
+                        <div class="radio-info">
+                            <span class="radio-dot empty"></span>
+                            <div>
+                                <strong>Express priority delivery</strong>
+                                <p>Arrives in 1–2 business days · Priority safe handling</p>
+                            </div>
+                        </div>
+                        <span class="shipping-price">NPR 450</span>
+                    </div>
+                </div>
+
+                <!-- Step 04: Payment -->
+                <div class="form-section-card reveal-on-scroll">
+                    <div class="step-title">
+                        <span class="step-number">04</span> Payment
+                    </div>
+
+                    <div class="payment-tabs">
+                        <button type="button" class="pay-tab active" data-pay="cod"><i class="fa-solid fa-circle-dot"></i> Cash on Delivery / Fonepay</button>
+                        <button type="button" class="pay-tab" data-pay="wallet"><i class="fa-regular fa-circle"></i> eSewa / Khalti Wallet</button>
+                    </div>
+
+                    <div class="payment-method-box" id="pay-box-cod">
+                        <p style="font-size: 0.85rem; color: var(--muted); margin-bottom: 12px; line-height: 1.5;">
+                            Pay conveniently upon receiving your package or scan our official Fonepay QR code on delivery.
+                        </p>
+                    </div>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> Billing address is the same as delivery address
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- Right Side: Order Summary Panel -->
+            <div class="checkout-summary-column reveal-on-scroll">
+                
+                <div class="summary-card">
+                    <div class="summary-header-row">
+                        <h2>Your world, in a bag.</h2>
+                        <a href="CheckOut.html" class="edit-link">Edit</a>
+                    </div>
+
+                    <!-- Summary Item 1 -->
+                    <div class="summary-item">
+                        <div class="sum-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=200&q=80" alt="Clearview Glass Aquarium">
+                        </div>
+                        <div class="sum-details">
+                            <h4>Clearview Glass Aquarium</h4>
+                            <p>60 L · Ultra-clear low-iron glass<br>Qty 1 · NPR 3,500 each</p>
+                        </div>
+                        <span class="sum-price">NPR 3,500</span>
+                    </div>
+
+                    <!-- Summary Item 2 -->
+                    <div class="summary-item">
+                        <div class="sum-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=200&q=80" alt="Anubias Nana Petite">
+                        </div>
+                        <div class="sum-details">
+                            <h4>Anubias Nana Petite</h4>
+                            <p>Easy care · Tissue culture cup<br>Qty 2 · NPR 250 each</p>
+                        </div>
+                        <span class="sum-price">NPR 500</span>
+                    </div>
+
+                    <!-- Summary Item 3 -->
+                    <div class="summary-item">
+                        <div class="sum-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=200&q=80" alt="Flow 300 Canister Filter">
+                        </div>
+                        <div class="sum-details">
+                            <h4>Flow 300 Canister Filter</h4>
+                            <p>300 L/h · Quiet external filtration<br>Qty 1 · NPR 1,200 each</p>
+                        </div>
+                        <span class="sum-price">NPR 1,200</span>
+                    </div>
+
+                    <div class="discount-code-toggle" id="toggle-discount-box">
+                        <span>Add a discount code</span>
+                        <i class="fa-solid fa-plus" id="discount-plus-icon"></i>
+                    </div>
+
+                    <div class="discount-input-wrap" id="discount-input-container" style="display: none; margin-bottom: 20px;">
+                        <div class="discount-input-group">
+                            <input type="text" id="chk-discount-code" placeholder="Enter code">
+                            <button type="button" id="btn-apply-chk-code">Apply</button>
+                        </div>
+                        <p id="chk-discount-msg" style="font-size: 0.75rem; margin-top: 6px; display: none;"></p>
+                    </div>
+
+                    <!-- Totals -->
+                    <div class="totals-block">
+                        <div class="sum-row">
+                            <span>Subtotal · 4 items</span>
+                            <span>NPR 5,200</span>
+                        </div>
+                        <div class="sum-row">
+                            <span>Shipping</span>
+                            <span id="summary-shipping-label">NPR 250</span>
+                        </div>
+                        <div class="sum-row">
+                            <span>Taxes & VAT</span>
+                            <span>Included</span>
+                        </div>
+
+                        <div class="sum-total-row">
+                            <span>Total</span>
+                            <span class="total-amount" id="summary-grand-total">NPR 5,450</span>
+                        </div>
+                        <p class="tax-note">NPR रू · Includes all applicable local taxes</p>
+
+                        <button type="button" class="place-order-btn" id="place-order-button">
+                            Place order · <span id="btn-order-total">NPR 5,450</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        
+                        <p class="terms-note">By placing your order, you agree to our Terms of Service and Privacy Policy.</p>
+                    </div>
+                </div>
+
+                <!-- Care Guarantee Box -->
+                <div class="care-guarantee-box">
+                    <div class="badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div>
+                        <strong>Packed by people who care.</strong>
+                        <p>We check every plant, protect every pane, and send tracking as soon as your order leaves us.</p>
+                    </div>
+                </div>
+
+                <div class="encrypted-badge">
+                    <i class="fa-solid fa-lock"></i> Encrypted payment · Safe & verified ordering
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Fish.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="OurStory.html">About Us</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="https://wa.me/9779864776061">WhatsApp support</a>
+                <a href="Aquariums.html">Aquarium care journal</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact us</a>
+                <a href="tel:+9779864776061">986-4776061</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const subtotal = 5200;
+        let shippingFee = 250;
+        let discountMultiplier = 1.0;
+
+        const grandTotalLabel = document.getElementById('summary-grand-total');
+        const btnOrderTotal = document.getElementById('btn-order-total');
+        const shippingLabel = document.getElementById('summary-shipping-label');
+
+        function recalculateTotals() {
+            const discountedSubtotal = subtotal * discountMultiplier;
+            const finalTotal = discountedSubtotal + shippingFee;
+            const formattedTotal = `NPR ${Math.round(finalTotal).toLocaleString()}`;
+            
+            grandTotalLabel.textContent = formattedTotal;
+            btnOrderTotal.textContent = formattedTotal;
+            shippingLabel.textContent = `NPR ${shippingFee.toLocaleString()}`;
+        }
+
+        // Shipping Radio Switcher
+        const radioCards = document.querySelectorAll('.radio-card');
+        radioCards.forEach(card => {
+            card.addEventListener('click', () => {
+                radioCards.forEach(c => {
+                    c.classList.remove('active');
+                    const dot = c.querySelector('.radio-dot');
+                    if (dot) dot.classList.add('empty');
+                });
+
+                card.classList.add('active');
+                const activeDot = card.querySelector('.radio-dot');
+                if (activeDot) activeDot.classList.remove('empty');
+
+                shippingFee = parseInt(card.getAttribute('data-shipping')) || 250;
+                recalculateTotals();
+            });
+        });
+
+        // Payment Tabs
+        const payTabs = document.querySelectorAll('.pay-tab');
+        payTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                payTabs.forEach(t => {
+                    t.classList.remove('active');
+                    const icon = t.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-circle-dot');
+                        icon.classList.add('fa-circle');
+                    }
+                });
+
+                tab.classList.add('active');
+                const activeIcon = tab.querySelector('i');
+                if (activeIcon) {
+                    activeIcon.classList.remove('fa-circle');
+                    activeIcon.classList.add('fa-circle-dot');
+                }
+            });
+        });
+
+        // Toggle Discount Box
+        const toggleDiscount = document.getElementById('toggle-discount-box');
+        const discountContainer = document.getElementById('discount-input-container');
+        const plusIcon = document.getElementById('discount-plus-icon');
+
+        toggleDiscount.addEventListener('click', () => {
+            const isHidden = discountContainer.style.display === 'none';
+            discountContainer.style.display = isHidden ? 'block' : 'none';
+            plusIcon.className = isHidden ? 'fa-solid fa-minus' : 'fa-solid fa-plus';
+        });
+
+        // Apply Discount Code
+        const btnApplyCode = document.getElementById('btn-apply-chk-code');
+        const chkDiscountMsg = document.getElementById('chk-discount-msg');
+
+        btnApplyCode.addEventListener('click', () => {
+            const code = document.getElementById('chk-discount-code').value.trim().toUpperCase();
+            if (code === 'FRN10' || code === 'AQUARIUM10') {
+                discountMultiplier = 0.90;
+                chkDiscountMsg.style.color = 'var(--green)';
+                chkDiscountMsg.textContent = '10% discount applied!';
+                chkDiscountMsg.style.display = 'block';
+            } else {
+                chkDiscountMsg.style.color = '#ef4444';
+                chkDiscountMsg.textContent = 'Invalid promo code';
+                chkDiscountMsg.style.display = 'block';
+            }
+            recalculateTotals();
+        });
+
+        // Place Order Action
+        document.getElementById('place-order-button').addEventListener('click', () => {
+            alert("Thank you for your order! Your aquarium journey has officially begun. We will contact you shortly.");
+        });
+
+        // Reveal on scroll
+        const revealItems = document.querySelectorAll('.reveal-on-scroll');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('revealed'));
+        }
+    </script>
+
+</body>
+</html>

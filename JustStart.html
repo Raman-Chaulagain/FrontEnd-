@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Your first planted aquarium, made simple.</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="juststart.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        
+        <!-- Article Hero -->
+        <div class="article-hero reveal-on-scroll">
+            <div class="breadcrumb"><a href="Home.html">Home</a> / The journal / Getting started</div>
+            <p class="journal-tag">THE JOURNAL / GETTING STARTED</p>
+            <h1>Your first planted aquarium, made simple.</h1>
+            <p class="hero-subtitle">A calm, practical guide to creating a healthy freshwater world—from the first glass box to the first quiet moment of wonder.</p>
+            
+            <div class="author-meta">
+                <span>By Rowan Ellis · Frn's aquarist</span>
+                <span class="dot-sep">·</span>
+                <span>October 8, 2026 · 8 min read</span>
+                <span class="bookmark-icon" id="bookmark-btn" aria-label="Bookmark article"><i class="fa-regular fa-bookmark"></i></span>
+            </div>
+        </div>
+
+        <!-- Featured Banner Image -->
+        <div class="featured-img-container reveal-on-scroll">
+            <div class="main-aquascape">
+                <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=700&q=85" alt="Planted Aquascape Tank">
+            </div>
+            <p class="img-caption">A thriving aquarium is built in layers: a thoughtful layout, healthy plants, and time.</p>
+        </div>
+
+        <!-- Article Body Layout (Sidebar + Content) -->
+        <div class="article-layout">
+            
+            <!-- Sticky Table of Contents Sidebar -->
+            <aside class="article-sidebar reveal-on-scroll">
+                <div class="toc-card">
+                    <div class="toc-title">IN THIS GUIDE</div>
+                    <ul class="toc-list" id="toc-list">
+                        <li><a href="#section-1" class="toc-link active">01 A good foundation</a></li>
+                        <li><a href="#section-2" class="toc-link">02 A growing landscape</a></li>
+                        <li><a href="#section-3" class="toc-link">03 The nitrogen cycle</a></li>
+                        <li><a href="#section-4" class="toc-link">04 Welcoming fish</a></li>
+                        <li><a href="#section-5" class="toc-link">05 Your weekly ritual</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-callout">
+                    <i class="fa-solid fa-seedling"></i>
+                    <div>
+                        <strong>Patience is a skill.</strong>
+                        <p>Plants can go in early. Fish need a fully cycled aquarium. Let your water tests—not the calendar—decide.</p>
+                    </div>
+                </div>
+
+                <a href="#" class="share-guide-link" id="share-guide-btn">Share this guide <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </aside>
+
+            <!-- Article Content Column -->
+            <article class="article-body">
+                
+                <p class="intro-paragraph reveal-on-scroll">You don’t need to know everything to begin. You just need a few good essentials, a little patience, and an understanding of what makes an aquarium feel like home to the life inside it.</p>
+
+                <!-- Starting Point Box -->
+                <div class="starting-point-box reveal-on-scroll">
+                    <div class="sp-title">YOUR STARTING POINT</div>
+                    <div class="sp-grid">
+                        <div class="sp-card">
+                            <span class="sp-key">Aquarium</span>
+                            <span class="sp-val">40–60 L is a forgiving first size</span>
+                        </div>
+                        <div class="sp-card">
+                            <span class="sp-key">Lighting</span>
+                            <span class="sp-val">Start at 6 hours daily</span>
+                        </div>
+                        <div class="sp-card">
+                            <span class="sp-key">Before adding fish</span>
+                            <span class="sp-val">0 ppm ammonia · 0 ppm nitrite</span>
+                        </div>
+                        <div class="sp-card">
+                            <span class="sp-key">Temperature</span>
+                            <span class="sp-val">Match your species, not a universal number</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 01 -->
+                <section id="section-1" class="guide-section reveal-on-scroll">
+                    <h2>01. Give your world a good foundation.</h2>
+                    <p>Start with a 40–60 liter aquarium if you have the space. A little more water makes temperature and chemistry easier to keep stable. Place it on a level, load-rated stand away from direct sunlight, heaters, and drafts. Once filled, an aquarium is much heavier than it looks.</p>
+                    <p>Rinse the empty tank with clean water—never soap. Add a protective leveling mat if your aquarium requires one. Before you build your landscape, plan where the filter, heater, and light will sit, and leave room to reach them for maintenance.</p>
+                </section>
+
+                <!-- Section 02 -->
+                <section id="section-2" class="guide-section reveal-on-scroll">
+                    <h2>02. Build a landscape that can grow.</h2>
+                    <p>Arrange your substrate, rocks, and aquarium-safe wood before adding water. Use a nutrient-rich aquarium soil for rooted plants, following the manufacturer's instructions. Fill slowly over a plate or bag so you don't disturb your layout. Treat tap water with an aquarium dechlorinator.</p>
+                    <p>For a forgiving first planting, try Anubias Nana Petite or Java Fern Trident. Attach their rhizomes to wood or rock; burying them can cause rot. Begin with six hours of light each day on a timer. Increase gradually only if your plants need it, and reduce the duration if algae begins to take over.</p>
+                </section>
+
+                <!-- Section 03 -->
+                <section id="section-3" class="guide-section reveal-on-scroll">
+                    <h2>03. Let the invisible world establish.</h2>
+                    <p>A clear tank is not necessarily a ready tank. Beneficial bacteria need time to grow in your filter and convert toxic ammonia into nitrite, then less harmful nitrate. This is the nitrogen cycle, and it is the most important step before welcoming any fish.</p>
+                    <p>Cycle without fish using an aquarium-safe ammonia source and a reliable liquid test kit. Keep the filter running around the clock and follow a fishless-cycling method carefully. It commonly takes four to six weeks, sometimes longer. Your tank is ready only when a measured ammonia dose is processed to zero ammonia and zero nitrite within 24 hours. Do a water change to lower nitrate before adding fish.</p>
+                </section>
+
+                <!-- Section 04 -->
+                <section id="section-4" class="guide-section reveal-on-scroll">
+                    <h2>04. Add life slowly, and thoughtfully.</h2>
+                    <p>Choose fish for your actual tank size, temperature, water hardness, and each other’s temperament—not just their color. Research the adult size and social needs of every species. Cardinal tetras need a proper school and a mature, suitably sized aquarium. A male betta should never share a tank with another male betta.</p>
+                    <p>Add a small number of compatible fish at a time, and check ammonia and nitrite daily while the bacteria adjust. Quarantine new arrivals in a separate, cycled setup where possible. Follow the seller’s species-specific acclimation instructions, keep the lights low, and never pour shipping water into your aquarium.</p>
+                </section>
+
+                <!-- Section 05 -->
+                <section id="section-5" class="guide-section reveal-on-scroll">
+                    <h2>05. Make sure you have a quiet weekly ritual.</h2>
+                    <p>Spend a few minutes each day watching your aquarium. Are the fish active? Is the filter flowing? Is the temperature steady? Feed small portions appropriate to your species, removing uneaten food. More food is rarely more love.</p>
+                    <p>Each week, test your water and change roughly 20–30%, adjusting to your stocking and test results. Use dechlorinated, temperature-matched water. Trim plants and gently clean the glass. Rinse filter sponges in removed tank water, not untreated tap water, and don’t replace all biological media at once. A stable aquarium rewards consistency more than constant tinkering.</p>
+                </section>
+
+                <!-- Water Pace Callout Box -->
+                <div class="water-pace-box reveal-on-scroll">
+                    <div class="wp-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <div>
+                        <strong>Your water, your pace.</strong>
+                        <p>There’s no single perfect schedule for every aquarium. Keep notes, test regularly, and ask us when something looks different. We’re here to help.</p>
+                    </div>
+                </div>
+
+                <!-- Author Note Quote -->
+                <div class="author-note-wrap reveal-on-scroll">
+                    <span class="note-tag">A NOTE FROM ROWAN</span>
+                    <blockquote>“The most beautiful aquariums aren’t the ones that happen overnight. They’re the ones you learn to understand.”</blockquote>
+                    <p class="note-author">Rowan Ellis · Aquarist, plant enthusiast, and your first-tank sounding board.</p>
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- Recommendations Section -->
+        <section class="recommendations-section reveal-on-scroll">
+            <div class="rec-header">
+                <h2>Start with the right essentials.</h2>
+                <a href="ShopAll.html" class="shop-col-link">Shop the collection <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img-wrap">
+                        <button type="button" class="wishlist-btn" aria-label="Add Clearview 60 Aquarium to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <a href="Clear.html">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUFaF5sun39u86EP2nL-WjbsNOBct6nO11f5vYY-3JBg&s=10" alt="Clearview Glass Aquarium">
+                        </a>
+                    </div>
+                    <span class="product-badge">THE PERFECT BEGINNING</span>
+                    <h3 class="product-title"><a href="Aquariums.html">Clearview Glass Aquarium</a></h3>
+                    <p class="product-subtitle">60 L · Ultra-clear low-iron glass</p>
+                    <div class="product-footer">
+                        <span class="price">NPR 3,500</span>
+                        <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20Clearview%20Aquarium" class="quick-add">Quick add <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img-wrap">
+                        <button type="button" class="wishlist-btn" aria-label="Add Anubias Nana Petite to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsO-hwEyrOEc2OOn--P5NahBkSB2EI-gGUR119RY-lEw&s=10" alt="Anubias Nana Petite">
+                    </div>
+                    <span class="product-badge">BEGINNER FRIENDLY</span>
+                    <h3 class="product-title">Anubias Nana Petite</h3>
+                    <p class="product-subtitle">Easy care · Tissue culture cup</p>
+                    <div class="product-footer">
+                        <span class="price">NPR 250</span>
+                        <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20Anubias%20Nana" class="quick-add">Quick add <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrap">
+                        <button type="button" class="wishlist-btn" aria-label="Add Flow 300 Canister Filter to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrOrIBaHKAQgHVWZoC1cLH_JPM-5z5vtXgXwiKAd-hfg&s" alt="Flow 300 Canister Filter">
+                    </div>
+                    <span class="product-badge">QUIET BY DESIGN</span>
+                    <h3 class="product-title">Flow 300 Canister Filter</h3>
+                    <p class="product-subtitle">300 L/h · Quiet external filtration</p>
+                    <div class="product-footer">
+                        <span class="price">NPR 1,200</span>
+                        <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20Canister%20Filter" class="quick-add">Quick add <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img-wrap">
+                        <button type="button" class="wishlist-btn" aria-label="Add Luma 60 LED Light to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOAZBkFGNi1S1g00ebha_BfOKGNSNjheGdhmZeuKpsA&s" alt="Luma 60 LED Light">
+                    </div>
+                    <span class="product-badge">GROW BEAUTIFULLY</span>
+                    <h3 class="product-title">Luma 60 LED Light</h3>
+                    <p class="product-subtitle">Full spectrum · 60 cm · Dimmable</p>
+                    <div class="product-footer">
+                        <span class="price">NPR 1,800</span>
+                        <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20Luma%20LED" class="quick-add">Quick add <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Fish.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="JustStart.html">The journal</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="https://wa.me/9779864776061">WhatsApp support</a>
+                <a href="JustStart.html">Aquarium care journal</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact us</a>
+                <a href="tel:+9779864776061">986-4776061</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Bookmark Toggle
+        const bookmarkBtn = document.getElementById('bookmark-btn');
+        bookmarkBtn.addEventListener('click', () => {
+            const icon = bookmarkBtn.querySelector('i');
+            if (icon.classList.contains('fa-regular')) {
+                icon.classList.remove('fa-regular');
+                icon.classList.add('fa-solid');
+                icon.style.color = 'var(--green)';
+                alert('Article bookmarked!');
+            } else {
+                icon.classList.remove('fa-solid');
+                icon.classList.add('fa-regular');
+                icon.style.color = '';
+            }
+        });
+
+        // Share Guide Link
+        document.getElementById('share-guide-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(window.location.href);
+                alert('Article link copied to clipboard!');
+            } else {
+                alert('Guide URL: ' + window.location.href);
+            }
+        });
+
+        // Wishlist Heart Toggle for products
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const icon = btn.querySelector('i');
+                if (icon.classList.contains('fa-regular')) {
+                    icon.classList.remove('fa-regular');
+                    icon.classList.add('fa-solid');
+                    icon.style.color = 'var(--green)';
+                } else {
+                    icon.classList.remove('fa-solid');
+                    icon.classList.add('fa-regular');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Active TOC scroll handler
+        const sections = document.querySelectorAll('.guide-section');
+        const tocLinks = document.querySelectorAll('.toc-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Reveal on scroll
+        const revealItems = document.querySelectorAll('.reveal-on-scroll');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('revealed'));
+        }
+    </script>
+
+</body>
+</html>

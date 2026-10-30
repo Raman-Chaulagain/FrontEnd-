@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Plants & Hardscape</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="plants.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html" class="active">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-section-shop reveal-on-scroll">
+            <div class="breadcrumb">
+                <a href="Home.html">Home</a> / <a href="Plants.html">Plants & Hardscape</a>
+            </div>
+            <span class="sec-tag">THE FRN'S AQUARIUM COLLECTION</span>
+            <h1>Aquatic Flora, Roots & Branches</h1>
+            <p class="hero-desc">
+                Discover lush living greens, natural driftwood, and aquatic hardscape essentials for your underwater world.
+            </p>
+        </section>
+
+        <!-- Filter Pills Category Selection -->
+        <div class="filter-pills reveal-on-scroll" aria-label="Plant categories">
+            <button class="pill active" data-category="all">All Items</button>
+            <button class="pill" data-category="foreground">Foreground & Moss</button>
+            <button class="pill" data-category="background">Background Flora</button>
+            <button class="pill" data-category="hardscape">Driftwood & Branches</button>
+        </div>
+
+        <div class="shop-layout">
+
+            <!-- Sidebar Filters -->
+            <aside class="sidebar reveal-on-scroll">
+                <div class="filter-header">
+                    <span>FILTER BY</span>
+                    <button type="button" class="reset-link" id="reset-filters">Reset all</button>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Availability</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="stock" checked>
+                        In stock (6)
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="soldout">
+                        Include sold out (0)
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Light Requirements</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="light" value="all" checked>
+                        All Light Levels
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="light" value="low">
+                        Low Light Friendly
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="light" value="medium">
+                        Medium / High Light
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Item Type</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="type" value="flora" checked>
+                        Live Plants & Moss
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="type" value="hardscape" checked>
+                        Natural Hardscape
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Price range</h3>
+                    <div class="price-inputs">
+                        <span class="price-box">NPR 380</span>
+                        <span class="price-box">NPR 1,650</span>
+                    </div>
+                    <div class="range-slider-mock"></div>
+                </div>
+
+                <div class="help-box">
+                    <div class="help-icon">
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </div>
+                    <div class="help-text">
+                        <strong>Not sure what plants fit your lighting?</strong>
+                        <p>Our aquarists can help you choose compatible species and driftwood for your tank setup.</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20need%20help%20choosing%20aquatic%20plants%20or%20hardscape"
+                   class="ask-aquarist">
+                    Ask an aquarist <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </aside>
+
+            <!-- Main Product Section -->
+            <section class="product-content">
+
+                <div class="product-sorting-bar reveal-on-scroll">
+                    <span class="showing-text">Showing <span id="item-count">6</span> of 6 items</span>
+                    <label class="sort-dropdown">
+                        <span>Sort by:</span>
+                        <select id="sort-products" aria-label="Sort products">
+                            <option value="featured">Featured</option>
+                            <option value="low">Price: low to high</option>
+                            <option value="high">Price: high to low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="product-grid" id="product-grid">
+
+                    <!-- Item 1: Anubias Nana Petite -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="foreground" data-type="flora" data-price="450"
+                        data-name="Anubias Nana Petite" data-light="low"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="anubias-petite" aria-label="Add Anubias Nana Petite to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB0e0mCoiP4YTUgq-P9gjIBFs7kk90f5BRTmn8vcmgYw&s=10"
+                                alt="Anubias Nana Petite">
+                        </div>
+                        <span class="product-badge">BEGINNER FRIENDLY</span>
+                        <h3 class="product-title"><a href="Plants.html">Anubias Nana Petite</a></h3>
+                        <p class="product-subtitle">Rhizome Plant · Low Light · Easy Care</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 450</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Anubias%20Nana%20Petite"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 2: Java Moss Wood Branch -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="foreground" data-type="flora" data-price="750"
+                        data-name="Java Moss Pre-Tied Branch" data-light="low"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="java-moss-branch" aria-label="Add Java Moss Branch to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-R0yYoslHc44s27Vcj8OCJAot0yQHyvwxx5Q1ahiVA&s=10"
+                                alt="Java Moss Attached to Branch">
+                        </div>
+                        <span class="product-badge">LIVE SPECIMEN</span>
+                        <h3 class="product-title"><a href="Plants.html">Java Moss Pre-Tied Branch</a></h3>
+                        <p class="product-subtitle">Taxiphyllum barbieri · Low-Med Light</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 750</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Java%20Moss%20Branch"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 3: Natural Spiderwood Branch -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="hardscape" data-type="hardscape" data-price="1200"
+                        data-name="Spiderwood Root Branch" data-light="none"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="spiderwood-branch" aria-label="Add Spiderwood Branch to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://shop.terrariumtribe.com/cdn/shop/files/Spiderwood_for_sale_5.jpg?v=1726052505&width=2048"
+                                alt="Natural Spiderwood Branch">
+                        </div>
+                        <span class="product-badge hardscape-badge">HARDSCAPE</span>
+                        <h3 class="product-title"><a href="Plants.html">Spiderwood Root Branch (Medium)</a></h3>
+                        <p class="product-subtitle">Pre-washed Natural Wood · 25–35 cm</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 1,200</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Spiderwood%20Branch"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 4: Amazon Sword -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="background" data-type="flora" data-price="380"
+                        data-name="Amazon Sword" data-light="medium"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="amazon-sword" aria-label="Add Amazon Sword to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYzRTJM49QAL3DR1Pd9r9sZ9ciNzc5QIXLZ-hA3mfUIg&s=10"
+                                alt="Amazon Sword Plant">
+                        </div>
+                        <span class="product-badge">BACKGROUND FOCAL</span>
+                        <h3 class="product-title"><a href="Plants.html">Amazon Sword (Echinodorus)</a></h3>
+                        <p class="product-subtitle">Background Root Plant · Medium Light</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 380</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Amazon%20Sword"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 5: Malaysian Driftwood Trunk -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="hardscape" data-type="hardscape" data-price="1650"
+                        data-name="Malaysian Dark Driftwood" data-light="none"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="malaysian-driftwood" aria-label="Add Malaysian Driftwood to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRoBFxD1ZQBC4DFxg7_OIKt0x3IB6T7XPiDsl0DHUwAA&s=10"
+                                alt="Malaysian Driftwood Trunk">
+                        </div>
+                        <span class="product-badge hardscape-badge">HARDSCAPE</span>
+                        <h3 class="product-title"><a href="Plants.html">Malaysian Dark Driftwood</a></h3>
+                        <p class="product-subtitle">Self-Sinking Heavy Wood · 30–40 cm</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 1,650</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Malaysian%20Driftwood"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 6: Cryptocoryne Wendtii Brown -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="foreground" data-type="flora" data-price="520"
+                        data-name="Cryptocoryne Wendtii Brown" data-light="low"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="cryptocoryne-wendtii" aria-label="Add Cryptocoryne Wendtii to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjzgqmYXAZHlD8cFWvATrqQjw2tqKNHztvs0s_HrNyow&s=10"
+                                alt="Cryptocoryne Wendtii">
+                        </div>
+                        <span class="product-badge">TISSUE CULTURE</span>
+                        <h3 class="product-title"><a href="Plants.html">Cryptocoryne Wendtii 'Brown'</a></h3>
+                        <p class="product-subtitle">Midground Plant · Bronze Foliage · Low CO2</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 520</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Cryptocoryne%20Wendtii"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="grid-footer-info reveal-on-scroll">
+                    <p>You've explored all 6 aquatic plants & hardscape items.</p>
+                    <a href="#top" class="back-to-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Planting & Preparation Guide Banner -->
+        <section class="promo-banner reveal-on-scroll">
+            <div class="promo-content">
+                <h2>Need help pairing plants with driftwood?</h2>
+                <p>Learn how to boil driftwood, attach mosses, and plant rhizomes correctly in our aquascaping journal.</p>
+            </div>
+            <a href="JustStart.html" class="promo-btn">
+                Read planting guide <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Fish.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="OurStory.html">The journal</a>
+                <a href="OurStory.html">Our story</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="Contact.html">Contact & FAQ</a>
+                <a href="OurStory.html">Aquarium care journal</a>
+                <a href="Cart.html">My account</a>
+                <a href="WishList.html">Wishlist</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="Contact.html">Privacy</a>
+                <a href="Contact.html">Terms</a>
+                <a href="Contact.html">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium%2C%20I%20have%20a%20question%20about%20plants" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const pills = document.querySelectorAll('.pill');
+            const cards = document.querySelectorAll('.product-card');
+            const countSpan = document.getElementById('item-count');
+            const sortSelect = document.getElementById('sort-products');
+            const grid = document.getElementById('product-grid');
+            const resetBtn = document.getElementById('reset-filters');
+            const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+
+            let selectedCategory = 'all';
+
+            // Real-time Filter System
+            function filterProducts() {
+                let visibleCount = 0;
+
+                const selectedLights = Array.from(document.querySelectorAll('input[name="light"]:checked')).map(cb => cb.value);
+                const selectedTypes = Array.from(document.querySelectorAll('input[name="type"]:checked')).map(cb => cb.value);
+
+                cards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+                    const cardLight = card.dataset.light;
+                    const cardType = card.dataset.type;
+
+                    const matchCategory = (selectedCategory === 'all' || cardCategory === selectedCategory);
+                    const matchLight = (selectedLights.includes('all') || selectedLights.includes(cardLight) || cardLight === 'none' || selectedLights.length === 0);
+                    const matchType = (selectedTypes.length === 0 || selectedTypes.includes(cardType));
+
+                    if (matchCategory && matchLight && matchType) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (countSpan) countSpan.textContent = visibleCount;
+            }
+
+            // Pill Selection
+            pills.forEach(pill => {
+                pill.addEventListener('click', () => {
+                    pills.forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+                    selectedCategory = pill.dataset.category;
+                    filterProducts();
+                });
+            });
+
+            // Checkbox Listeners
+            document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(cb => {
+                cb.addEventListener('change', filterProducts);
+            });
+
+            // Reset All Button
+            if (resetBtn) {
+                resetBtn.addEventListener('click', () => {
+                    selectedCategory = 'all';
+                    pills.forEach(p => p.classList.remove('active'));
+                    if (pills[0]) pills[0].classList.add('active');
+
+                    document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(cb => {
+                        if (cb.value === 'stock' || cb.value === 'all' || cb.value === 'flora' || cb.value === 'hardscape') {
+                            cb.checked = true;
+                        } else {
+                            cb.checked = false;
+                        }
+                    });
+
+                    sortSelect.value = 'featured';
+                    filterProducts();
+                });
+            }
+
+            // Live Sorting Logic
+            if (sortSelect && grid) {
+                sortSelect.addEventListener('change', () => {
+                    const val = sortSelect.value;
+                    const cardsArray = Array.from(cards);
+
+                    cardsArray.sort((a, b) => {
+                        const priceA = parseFloat(a.dataset.price) || 0;
+                        const priceB = parseFloat(b.dataset.price) || 0;
+                        const nameA = a.dataset.name.toLowerCase();
+                        const nameB = b.dataset.name.toLowerCase();
+
+                        if (val === 'low') return priceA - priceB;
+                        if (val === 'high') return priceB - priceA;
+                        if (val === 'name') return nameA.localeCompare(nameB);
+                        return 0;
+                    });
+
+                    cardsArray.forEach(card => grid.appendChild(card));
+                });
+            }
+
+            // Wishlist Toggle
+            wishlistBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const icon = btn.querySelector('i');
+                    if (icon) {
+                        if (icon.classList.contains('fa-regular')) {
+                            icon.classList.remove('fa-regular');
+                            icon.classList.add('fa-solid');
+                            icon.style.color = '#e74c3c';
+                        } else {
+                            icon.classList.remove('fa-solid');
+                            icon.classList.add('fa-regular');
+                            icon.style.color = '';
+                        }
+                    }
+                });
+            });
+
+            // Intersection Observer
+            const revealItems = document.querySelectorAll('.reveal-on-scroll');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('revealed');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                revealItems.forEach(item => observer.observe(item));
+            } else {
+                revealItems.forEach(item => item.classList.add('revealed'));
+            }
+        });
+    </script>
+
+</body>
+</html>

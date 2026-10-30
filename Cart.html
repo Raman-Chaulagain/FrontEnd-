@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Your bag</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="cart.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="MyOrder.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-container">
+        
+        <!-- Breadcrumb & Hero -->
+        <div class="hero-bag-section reveal-on-scroll">
+            <div class="breadcrumb"><a href="Home.html">Home</a> / Your bag</div>
+            <h1>A world in the making.</h1>
+            <p class="bag-subtitle" id="bag-subtitle-label">Your bag · 4 thoughtfully chosen essentials</p>
+        </div>
+
+        <!-- Bag Layout Grid (Cart Items + Order Summary) -->
+        <div class="bag-layout">
+            
+            <!-- Left Side: Cart Items List -->
+            <div class="cart-items-section reveal-on-scroll">
+                <div class="cart-table-header">
+                    <span>PRODUCT</span>
+                    <span>TOTAL</span>
+                </div>
+
+                <!-- Item 1 -->
+                <div class="cart-item" data-price="3500">
+                    <div class="item-img-wrap">
+                        <a href="Clear.html">
+                            <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=300&q=80" alt="Clearview Glass Aquarium">
+                        </a>
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title"><a href="Aquariums.html">Clearview Glass Aquarium</a></h3>
+                        <p class="item-desc">60 L · Ultra-clear low-iron glass</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button type="button" class="btn-qty-minus" aria-label="Decrease quantity">-</button>
+                                <span class="item-qty">1</span>
+                                <button type="button" class="btn-qty-plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <button type="button" class="action-btn btn-remove">Remove</button>
+                            <button type="button" class="action-btn btn-save">Save for later</button>
+                        </div>
+                    </div>
+                    <div class="item-total">NPR 3,500</div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="cart-item" data-price="250">
+                    <div class="item-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=300&q=80" alt="Anubias Nana Petite">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Anubias Nana Petite</h3>
+                        <p class="item-desc">Easy care · Tissue culture cup</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button type="button" class="btn-qty-minus" aria-label="Decrease quantity">-</button>
+                                <span class="item-qty">2</span>
+                                <button type="button" class="btn-qty-plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <button type="button" class="action-btn btn-remove">Remove</button>
+                            <button type="button" class="action-btn btn-save">Save for later</button>
+                        </div>
+                    </div>
+                    <div class="item-total">NPR 500</div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="cart-item" data-price="1200">
+                    <div class="item-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=300&q=80" alt="Flow 300 Canister Filter">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Flow 300 Canister Filter</h3>
+                        <p class="item-desc">300 L/h · Quiet external filtration</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button type="button" class="btn-qty-minus" aria-label="Decrease quantity">-</button>
+                                <span class="item-qty">1</span>
+                                <button type="button" class="btn-qty-plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <button type="button" class="action-btn btn-remove">Remove</button>
+                            <button type="button" class="action-btn btn-save">Save for later</button>
+                        </div>
+                    </div>
+                    <div class="item-total">NPR 1,200</div>
+                </div>
+
+                <!-- Extra Care Callout Box -->
+                <div class="extra-care-box">
+                    <div class="care-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <div class="care-text">
+                        <strong>A little extra care, from us to you.</strong>
+                        <p>Your glass aquarium travels in protective packaging. Plants are insulated and packed fresh on dispatch day.</p>
+                    </div>
+                </div>
+
+                <a href="ShopAll.html" class="continue-exploring"><i class="fa-solid fa-arrow-left-long"></i> Continue exploring</a>
+            </div>
+
+            <!-- Right Side: Order Summary Panel -->
+            <div class="order-summary-panel reveal-on-scroll">
+                <h2>Order summary</h2>
+                
+                <div class="summary-row">
+                    <span id="summary-items-label">Subtotal · 4 items</span>
+                    <span id="summary-subtotal">NPR 5,200</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery across Nepal</span>
+                    <span>NPR 250</span>
+                </div>
+                <div class="summary-row">
+                    <span>VAT / Taxes included</span>
+                    <span>NPR 0</span>
+                </div>
+
+                <div class="summary-total-row">
+                    <span>Total</span>
+                    <span class="total-price" id="summary-final-total">NPR 5,450</span>
+                </div>
+                <p class="tax-note">NPR रू - Includes all applicable local taxes</p>
+
+                <a href="CheckOut.html" class="checkout-btn">Continue to checkout <i class="fa-solid fa-arrow-right"></i></a>
+
+                <!-- Discount Code Box -->
+                <div class="discount-section">
+                    <label for="discount-code">Have a discount code?</label>
+                    <form class="discount-input-group" id="discount-form">
+                        <input type="text" id="discount-code" placeholder="Enter code">
+                        <button type="submit">Apply <i class="fa-solid fa-check"></i></button>
+                    </form>
+                    <p class="discount-message" id="discount-msg" style="display: none; font-size: 0.75rem; margin-top: 6px;"></p>
+                </div>
+
+                <p class="delivery-estimate">Estimated delivery in Nepal: 2–4 business days. Express options confirmed at checkout.</p>
+
+                <div class="secure-payment-info">
+                    <span>Accepted payments</span>
+                    <div class="payment-icons">
+                        <span>eSewa</span> · <span>Khalti</span> · <span>Fonepay</span> · <span>Cash on Delivery</span>
+                    </div>
+                </div>
+
+                <p class="return-guarantee">Dry goods can be returned within 30 days. Live aquatic plants are backed by our healthy-arrival guarantee.</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom Recommendations Section -->
+        <div class="recommendations-section reveal-on-scroll">
+            <div class="rec-header">
+                <p class="rec-tag">A NATURAL NEXT STEP</p>
+                <h2>Make it a living landscape.</h2>
+                <p class="rec-subtitle">A few companions for the world you're building.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Rec Product 1 -->
+                <div class="product-card">
+                    <div class="product-img-wrap">
+                        <button class="wishlist-btn" aria-label="Add Luma 60 LED Light to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=700&q=85" alt="Luma 60 LED Light">
+                    </div>
+                    <span class="product-badge">GROW BEAUTIFULLY</span>
+                    <h3 class="product-title">Luma 60 LED Light</h3>
+                    <p class="product-subtitle">Full spectrum · 60 cm · Dimmable</p>
+                    <div class="product-footer">
+                        <span class="price">NPR 1,800</span>
+                        <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Luma%2060%20LED%20Light" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <!-- Rec Product 2 -->
+                <div class="product-card">
+                    <div class="product-img-wrap">
+                        <button class="wishlist-btn" aria-label="Add Java Fern Trident to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=700&q=85" alt="Java Fern Trident">
+                    </div>
+                    <span class="product-badge">LOW MAINTENANCE</span>
+                    <h3 class="product-title">Java Fern Trident</h3>
+                    <p class="product-subtitle">Low light · Potted plant</p>
+                    <div class="product-footer">
+                        <span class="price">NPR 300</span>
+                        <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Java%20Fern" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <!-- Rec Product 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrap">
+                        <button class="wishlist-btn" aria-label="Add Cardinal Tetra School to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=700&q=85" alt="Cardinal Tetra School">
+                    </div>
+                    <span class="product-badge">COMMUNITY FAVORITE</span>
+                    <h3 class="product-title">Cardinal Tetra School</h3>
+                    <p class="product-subtitle">Paracheirodon axelrodi · 6 fish</p>
+                    <div class="product-footer">
+                        <span class="price">NPR 600</span>
+                        <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Cardinal%20Tetra" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <!-- Rec Product 4 -->
+                <div class="product-card">
+                    <div class="product-img-wrap">
+                        <button class="wishlist-btn" aria-label="Add Emerald Halfmoon Betta to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&w=700&q=85" alt="Emerald Halfmoon Betta">
+                    </div>
+                    <span class="product-badge">KEEPER FAVORITE</span>
+                    <h3 class="product-title">Emerald Halfmoon Betta</h3>
+                    <p class="product-subtitle">Betta splendens · Male · 1 fish</p>
+                    <div class="product-footer">
+                        <span class="price">NPR 800</span>
+                        <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Emerald%20Halfmoon%20Betta" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="planning-note">Planning to add fish? Cycle your aquarium fully before welcoming any livestock.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Fish.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="OurStory.html">The journal</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="https://wa.me/9779864776061">WhatsApp support</a>
+                <a href="ourstory.css">Aquarium care journal</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact us</a>
+                <a href="tel:+9779864776061">986-4776061</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const shippingCost = 250;
+        let discountMultiplier = 1.0;
+
+        function updateCartCalculations() {
+            let totalItemCount = 0;
+            let subtotal = 0;
+
+            const items = document.querySelectorAll('.cart-item');
+            items.forEach(item => {
+                const price = parseFloat(item.getAttribute('data-price')) || 0;
+                const qtyElement = item.querySelector('.item-qty');
+                const qty = parseInt(qtyElement.textContent) || 0;
+                totalItemCount += qty;
+
+                const itemTotal = price * qty;
+                subtotal += itemTotal;
+
+                const itemTotalDisplay = item.querySelector('.item-total');
+                itemTotalDisplay.textContent = `NPR ${itemTotal.toLocaleString()}`;
+            });
+
+            const badge = document.getElementById('bag-count-badge');
+            const subtitle = document.getElementById('bag-subtitle-label');
+            const itemsLabel = document.getElementById('summary-items-label');
+            const subtotalDisplay = document.getElementById('summary-subtotal');
+            const finalTotalDisplay = document.getElementById('summary-final-total');
+
+            badge.textContent = totalItemCount;
+            subtitle.textContent = `Your bag · ${totalItemCount} thoughtfully chosen essential${totalItemCount === 1 ? '' : 's'}`;
+            itemsLabel.textContent = `Subtotal · ${totalItemCount} item${totalItemCount === 1 ? '' : 's'}`;
+            subtotalDisplay.textContent = `NPR ${subtotal.toLocaleString()}`;
+
+            const discountedSubtotal = subtotal * discountMultiplier;
+            const grandTotal = items.length > 0 ? discountedSubtotal + shippingCost : 0;
+            finalTotalDisplay.textContent = `NPR ${Math.round(grandTotal).toLocaleString()}`;
+        }
+
+        // Quantity Buttons
+        document.querySelectorAll('.cart-item').forEach(item => {
+            const minusBtn = item.querySelector('.btn-qty-minus');
+            const plusBtn = item.querySelector('.btn-qty-plus');
+            const qtySpan = item.querySelector('.item-qty');
+
+            minusBtn.addEventListener('click', () => {
+                let qty = parseInt(qtySpan.textContent) || 1;
+                if (qty > 1) {
+                    qtySpan.textContent = qty - 1;
+                    updateCartCalculations();
+                }
+            });
+
+            plusBtn.addEventListener('click', () => {
+                let qty = parseInt(qtySpan.textContent) || 1;
+                qtySpan.textContent = qty + 1;
+                updateCartCalculations();
+            });
+
+            // Remove Button
+            const removeBtn = item.querySelector('.btn-remove');
+            if (removeBtn) {
+                removeBtn.addEventListener('click', () => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(-10px)';
+                    item.style.transition = 'all 0.3s ease';
+                    setTimeout(() => {
+                        item.remove();
+                        updateCartCalculations();
+                    }, 300);
+                });
+            }
+        });
+
+        // Discount Form
+        const discountForm = document.getElementById('discount-form');
+        const discountMsg = document.getElementById('discount-msg');
+
+        discountForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const code = document.getElementById('discount-code').value.trim().toUpperCase();
+            if (code === 'FRN10' || code === 'AQUARIUM10') {
+                discountMultiplier = 0.90;
+                discountMsg.style.color = 'var(--green)';
+                discountMsg.textContent = '10% discount applied!';
+                discountMsg.style.display = 'block';
+            } else {
+                discountMsg.style.color = '#ef4444';
+                discountMsg.textContent = 'Invalid promo code';
+                discountMsg.style.display = 'block';
+            }
+            updateCartCalculations();
+        });
+
+        // Wishlist Buttons
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const icon = btn.querySelector('i');
+                const active = icon.classList.toggle('fa-solid');
+                icon.classList.toggle('fa-regular', !active);
+            });
+        });
+
+        // Reveal on scroll
+        const revealItems = document.querySelectorAll('.reveal-on-scroll');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('revealed'));
+        }
+    </script>
+
+</body>
+</html>

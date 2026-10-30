@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Equipment</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="equipments.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html" class="active">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-section-shop reveal-on-scroll">
+            <div class="breadcrumb">
+                <a href="Home.html">Home</a> / <a href="Equipments.html">Equipment</a>
+            </div>
+            <span class="sec-tag">THE FRN'S AQUARIUM COLLECTION</span>
+            <h1>Filters, Lighting & Life Support</h1>
+            <p class="hero-desc">
+                Keep your tank crystal clear and balanced with reliable filtration, full-spectrum LED lighting, heaters, and essential maintenance gear.
+            </p>
+        </section>
+
+        <!-- Filter Pills Category Selection -->
+        <div class="filter-pills reveal-on-scroll" aria-label="Equipment categories">
+            <button class="pill active" data-category="all">All Equipment</button>
+            <button class="pill" data-category="filtration">Filtration</button>
+            <button class="pill" data-category="lighting">Lighting</button>
+            <button class="pill" data-category="heating">Heating & Water Care</button>
+            <button class="pill" data-category="maintenance">Tools & Accessories</button>
+        </div>
+
+        <div class="shop-layout">
+
+            <!-- Sidebar Filters -->
+            <aside class="sidebar reveal-on-scroll">
+                <div class="filter-header">
+                    <span>FILTER BY</span>
+                    <button type="button" class="reset-link" id="reset-filters">Reset all</button>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Availability</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="stock" checked>
+                        In stock (6)
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="soldout">
+                        Include sold out (0)
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Tank Capacity Fit</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="capacity" value="all" checked>
+                        All Tank Sizes
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="capacity" value="nano">
+                        Nano / Small (Up to 30L)
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="capacity" value="medium">
+                        Medium / Large (60L+)
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Category Type</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="type" value="filtration" checked>
+                        Filters & Media
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="type" value="lighting" checked>
+                        LED Lighting
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="type" value="heating" checked>
+                        Heaters & Thermometers
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Price range</h3>
+                    <div class="price-inputs">
+                        <span class="price-box">NPR 450</span>
+                        <span class="price-box">NPR 3,200</span>
+                    </div>
+                    <div class="range-slider-mock"></div>
+                </div>
+
+                <div class="help-box">
+                    <div class="help-icon">
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </div>
+                    <div class="help-text">
+                        <strong>Need help sizing a filter or heater?</strong>
+                        <p>Our aquarists can recommend the exact flow rate and wattage required for your tank dimensions.</p>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">Category Type</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="type" value="filtration" checked>
+                        Filters & Media
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="type" value="lighting" checked>
+                        LED Lighting
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="type" value="heating" checked>
+                        Heaters & Thermometers
+                    </label>
+                    <!-- ADD THIS LINE -->
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="type" value="maintenance" checked>
+                        Tools & Accessories
+                    </label>
+                </div>
+
+                <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20need%20help%20choosing%20aquarium%20equipment"
+                   class="ask-aquarist">
+                    Ask an aquarist <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </aside>
+
+            <!-- Main Product Section -->
+            <section class="product-content">
+
+                <div class="product-sorting-bar reveal-on-scroll">
+                    <span class="showing-text">Showing <span id="item-count">6</span> of 6 items</span>
+                    <label class="sort-dropdown">
+                        <span>Sort by:</span>
+                        <select id="sort-products" aria-label="Sort products">
+                            <option value="featured">Featured</option>
+                            <option value="low">Price: low to high</option>
+                            <option value="high">Price: high to low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="product-grid" id="product-grid">
+
+                    <!-- Item 1: Flow 300 Canister Filter -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="filtration" data-type="filtration" data-price="1200"
+                        data-name="Flow 300 Canister Filter" data-capacity="medium"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="flow-canister" aria-label="Add Flow 300 Canister Filter to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ0s_B9dQhP-_u7RiB8uFB5P0cJivmFyDy1yA2x7H9UA&s=10"
+                                alt="Flow 300 Canister Filter">
+                        </div>
+                        <span class="product-badge">QUIET BY DESIGN</span>
+                        <h3 class="product-title"><a href="Equipments.html">Flow 300 Canister Filter</a></h3>
+                        <p class="product-subtitle">300 L/h · External Filtration · Multi-stage Media</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 1,200</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Flow%20300%20Canister%20Filter"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 2: Luma 60 LED Light -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="lighting" data-type="lighting" data-price="1800"
+                        data-name="Luma 60 Full Spectrum LED" data-capacity="medium"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="luma-led" aria-label="Add Luma 60 LED Light to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOAZBkFGNi1S1g00ebha_BfOKGNSNjheGdhmZeuKpsA&s"
+                                alt="Luma 60 LED Light">
+                        </div>
+                        <span class="product-badge">PLANT GROWTH BOOST</span>
+                        <h3 class="product-title"><a href="Equipments.html">Luma 60 LED Light Bar</a></h3>
+                        <p class="product-subtitle">Full Spectrum · 60 cm · Dimmable Controller</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 1,800</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Luma%2060%20LED%20Light"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 3: Submersible Pro Heater 100W -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="heating" data-type="heating" data-price="950"
+                        data-name="Submersible Pro Heater 100W" data-capacity="medium"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="pro-heater" aria-label="Add Pro Heater 100W to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy1fT5N53exWVVenAqo7AJp3oEo7jQIAfAMzjQ_zOqkQ&s"
+                                alt="Submersible Pro Heater">
+                        </div>
+                        <span class="product-badge">AUTO THERMOSTAT</span>
+                        <h3 class="product-title"><a href="Equipments.html">Submersible Pro Heater 100W</a></h3>
+                        <p class="product-subtitle">Preset Temp Guard · Shatterproof Glass</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 950</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Pro%20Heater%20100W"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 4: Surface Skimmer Filter Nano -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="filtration" data-type="filtration" data-price="650"
+                        data-name="Nano Surface Skimmer" data-capacity="nano"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="surface-skimmer" aria-label="Add Nano Surface Skimmer to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3ZQLr0v2Z_NzFpVDMHJeWUnWWiFQVbFV0g-nth48cw&s=10"
+                                alt="Nano Surface Skimmer">
+                        </div>
+                        <span class="product-badge">CRYSTAL WATER</span>
+                        <h3 class="product-title"><a href="Equipments.html">Nano Surface Skimmer</a></h3>
+                        <p class="product-subtitle">Removes Surface Film · Compact 5W Motor</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 650</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Nano%20Surface%20Skimmer"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 5: Stainless Aquascaping Tool Set -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="maintenance" data-type="maintenance" data-price="1450"
+                        data-name="Stainless Aquascaping Tool Set" data-capacity="all"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="scaper-tools" aria-label="Add Aquascaping Tool Set to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa18QNO29cEgazWGfHR13OoVvivygWM-QcXdeWRryGvA&s=10"
+                                alt="Aquascaping Tool Set">
+                        </div>
+                        <span class="product-badge">ESSENTIAL KIT</span>
+                        <h3 class="product-title"><a href="Equipments.html">Pro Aquascaping Tool Set</a></h3>
+                        <p class="product-subtitle">Curved Scissors · Tweezers · Substrate Flattener</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 1,450</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Pro%20Aquascaping%20Tool%20Set"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Item 6: Digital Precision Thermometer -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="heating" data-type="heating" data-price="450"
+                        data-name="Digital Precision Thermometer" data-capacity="all"
+                        data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button"
+                                data-id="digital-thermometer" aria-label="Add Digital Thermometer to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx869hcy-cQQc_JaGCGxQnqMFYi1WcuVsd5zNAi7dpdw&s=10"
+                                alt="Digital Precision Thermometer">
+                        </div>
+                        <span class="product-badge">HIGH ACCURACY</span>
+                        <h3 class="product-title"><a href="Equipments.html">Digital Tank Thermometer</a></h3>
+                        <p class="product-subtitle">Submersible Probe · LCD Screen Display</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 450</span>
+                            <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20am%20interested%20in%20Digital%20Tank%20Thermometer"
+                                class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="grid-footer-info reveal-on-scroll">
+                    <p>You've explored all 6 essential equipment items.</p>
+                    <a href="#top" class="back-to-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Equipment Selection & Guide Banner -->
+        <section class="promo-banner reveal-on-scroll">
+            <div class="promo-content">
+                <h2>Building your water circulation & filtration?</h2>
+                <p>Learn how to select the right filtration media and light schedule in our equipment guide.</p>
+            </div>
+            <a href="OurStory.html" class="promo-btn">
+                Read equipment guide <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Fish.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="Equipments.html">Equipment</a>
+                <a href="OurStory.html">Our story</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="Contact.html">Contact & FAQ</a>
+                <a href="OurStory.html">Aquarium care journal</a>
+                <a href="Cart.html">My account</a>
+                <a href="WishList.html">Wishlist</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="Contact.html">Privacy</a>
+                <a href="Contact.html">Terms</a>
+                <a href="Contact.html">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium%2C%20I%20have%20a%20question%20about%20equipment" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const pills = document.querySelectorAll('.pill');
+            const cards = document.querySelectorAll('.product-card');
+            const countSpan = document.getElementById('item-count');
+            const sortSelect = document.getElementById('sort-products');
+            const grid = document.getElementById('product-grid');
+            const resetBtn = document.getElementById('reset-filters');
+            const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+
+            let selectedCategory = 'all';
+
+            // Real-time Filter System
+            function filterProducts() {
+                let visibleCount = 0;
+
+                const selectedCapacities = Array.from(document.querySelectorAll('input[name="capacity"]:checked')).map(cb => cb.value);
+                const selectedTypes = Array.from(document.querySelectorAll('input[name="type"]:checked')).map(cb => cb.value);
+
+                cards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+                    const cardCapacity = card.dataset.capacity;
+                    const cardType = card.dataset.type;
+
+                    const matchCategory = (selectedCategory === 'all' || cardCategory === selectedCategory);
+                    const matchCapacity = (selectedCapacities.includes('all') || selectedCapacities.includes(cardCapacity) || cardCapacity === 'all' || selectedCapacities.length === 0);
+                    const matchType = (selectedTypes.length === 0 || selectedTypes.includes(cardType));
+
+                    if (matchCategory && matchCapacity && matchType) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (countSpan) countSpan.textContent = visibleCount;
+            }
+
+            // Pill Selection & Sidebar Checkbox Synchronization
+            pills.forEach(pill => {
+                pill.addEventListener('click', () => {
+                    selectedCategory = pill.dataset.category;
+
+                    pills.forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+
+                    // Reset sidebar category filters when selecting a pill
+                    if (selectedCategory === 'all') {
+                        document.querySelectorAll('input[name="type"]').forEach(cb => {
+                            cb.checked = true;
+                        });
+                    } else {
+                        document.querySelectorAll('input[name="type"]').forEach(cb => {
+                            cb.checked = cb.value === selectedCategory;
+                        });
+                    }
+
+                    filterProducts();
+                });
+            });
+
+            // Checkbox Listeners
+            document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(cb => {
+                cb.addEventListener('change', filterProducts);
+            });
+
+            // Reset All Button
+            if (resetBtn) {
+                resetBtn.addEventListener('click', () => {
+                    selectedCategory = 'all';
+                    pills.forEach(p => p.classList.remove('active'));
+                    if (pills[0]) pills[0].classList.add('active');
+
+                    document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(cb => {
+                        if (cb.value === 'stock' || cb.value === 'all' || cb.value === 'filtration' || cb.value === 'lighting' || cb.value === 'heating') {
+                            cb.checked = true;
+                        } else {
+                            cb.checked = false;
+                        }
+                    });
+
+                    sortSelect.value = 'featured';
+                    filterProducts();
+                });
+            }
+
+            // Live Sorting Logic
+            if (sortSelect && grid) {
+                sortSelect.addEventListener('change', () => {
+                    const val = sortSelect.value;
+                    const cardsArray = Array.from(cards);
+
+                    cardsArray.sort((a, b) => {
+                        const priceA = parseFloat(a.dataset.price) || 0;
+                        const priceB = parseFloat(b.dataset.price) || 0;
+                        const nameA = a.dataset.name.toLowerCase();
+                        const nameB = b.dataset.name.toLowerCase();
+
+                        if (val === 'low') return priceA - priceB;
+                        if (val === 'high') return priceB - priceA;
+                        if (val === 'name') return nameA.localeCompare(nameB);
+                        return 0;
+                    });
+
+                    cardsArray.forEach(card => grid.appendChild(card));
+                });
+            }
+
+            // Wishlist Toggle
+            wishlistBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const icon = btn.querySelector('i');
+                    if (icon) {
+                        if (icon.classList.contains('fa-regular')) {
+                            icon.classList.remove('fa-regular');
+                            icon.classList.add('fa-solid');
+                            icon.style.color = '#e74c3c';
+                        } else {
+                            icon.classList.remove('fa-solid');
+                            icon.classList.add('fa-regular');
+                            icon.style.color = '';
+                        }
+                    }
+                });
+            });
+
+            // Intersection Observer
+            const revealItems = document.querySelectorAll('.reveal-on-scroll');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('revealed');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                revealItems.forEach(item => observer.observe(item));
+            } else {
+                revealItems.forEach(item => item.classList.add('revealed'));
+            }
+        });
+    </script>
+
+</body>
+</html>

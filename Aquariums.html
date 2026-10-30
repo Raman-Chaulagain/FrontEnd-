@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - Aquariums & Glass Tanks</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="aquarium.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html" class="active">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <!-- Hero Banner -->
+        <section class="hero-section-shop reveal-on-scroll">
+            <div class="breadcrumb">
+                <a href="Home.html">Home</a> / <a href="Aquariums.html">Aquariums</a>
+            </div>
+            <span class="sec-tag">CLEAR GLASS & DESIGNER SETUPS</span>
+            <h1>The Canvas for Your Aquatic World.</h1>
+            <p class="hero-desc">
+                High-transparency low-iron glass tanks, rimless designs, and complete starter kits engineered for stability and clarity.
+            </p>
+        </section>
+
+        <!-- Category Pills -->
+        <div class="filter-pills reveal-on-scroll" aria-label="Aquarium Types">
+            <button class="pill active" data-category="all">All Tanks</button>
+            <button class="pill" data-category="nano">Nano Tanks (&lt;30L)</button>
+            <button class="pill" data-category="medium">Medium Aquariums (30-80L)</button>
+            <button class="pill" data-category="rimless">Rimless Low-Iron</button>
+            <button class="pill" data-category="kits">All-In-One Kits</button>
+        </div>
+
+        <!-- Layout Grid -->
+        <div class="shop-layout">
+
+            <!-- Sidebar Filters -->
+            <aside class="sidebar reveal-on-scroll">
+                <div class="filter-header">
+                    <span>FILTER BY</span>
+                    <button type="button" class="reset-link" id="reset-filters">Reset all</button>
+                </div>
+
+                <!-- Glass Type Filter -->
+                <div class="filter-group">
+                    <h3 class="filter-title">Glass Type</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="glass" value="all" checked>
+                        All Glass Types
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="glass" value="low-iron">
+                        Ultra-Clear Low-Iron Glass
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="glass" value="float">
+                        Standard Float Glass
+                    </label>
+                </div>
+
+                <!-- Setup Experience Filter -->
+                <div class="filter-group">
+                    <h3 class="filter-title">Experience Level</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="experience" value="all" checked>
+                        All Levels
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="experience" value="beginner">
+                        Beginner Friendly
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="experience" value="intermediate">
+                        Intermediate / Aquascaping
+                    </label>
+                </div>
+
+                <!-- Availability Filter -->
+                <div class="filter-group">
+                    <h3 class="filter-title">Availability</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="stock" checked>
+                        In Stock Only
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="availability" value="soldout">
+                        Include Sold Out
+                    </label>
+                </div>
+
+                <!-- Help Box -->
+                <div class="help-box">
+                    <div class="help-icon">
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </div>
+                    <div class="help-text">
+                        <strong>Need custom sizing?</strong>
+                        <p>We build tailored rimless glass aquariums to match your precise space requirements.</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/9779864776061?text=Hello%2C%20I%20have%20a%20question%20about%20custom%20aquarium%20sizes" class="ask-aquarist">
+                    Inquire for custom dimensions <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </aside>
+
+            <!-- Product Grid Area -->
+            <section class="product-content">
+
+                <!-- Sorting Bar -->
+                <div class="product-sorting-bar reveal-on-scroll">
+                    <span class="showing-text" id="showing-count">Showing 6 of 6 tanks</span>
+                    <label class="sort-dropdown">
+                        <span>Sort by:</span>
+                        <select id="sort-products" aria-label="Sort aquariums">
+                            <option value="featured">Featured</option>
+                            <option value="low">Price: low to high</option>
+                            <option value="high">Price: high to low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </label>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="product-grid" id="product-grid">
+
+                    <!-- Tank 1 -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="medium" data-price="3500"
+                        data-name="Clearview Glass Aquarium 60L" data-level="beginner"
+                        data-glass="low-iron" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button" data-id="clearview-60l" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <a href="Clear.html">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjF0yVo4IgfVdcoGYi5VBGbG284mvUAkyjqQe-9bqO4A&s=10" alt="Clearview Glass Aquarium 60L">
+                            </a>
+                        </div>
+                        <span class="product-badge">BESTSELLER</span>
+                        <h3 class="product-title"><a href="Clear.html">Clearview Glass Aquarium</a></h3>
+                        <p class="product-subtitle">60L · 60x30x36 cm · 91% Transmittance</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 3,500</span>
+                            <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20Clearview%20Glass%20Aquarium" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tank 2 -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="nano" data-price="1800"
+                        data-name="Cube Nano Glass Tank 15L" data-level="beginner"
+                        data-glass="low-iron" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button" data-id="nano-cube-15l" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRhVw1HgeX4XXlLMLvqs4HtHExbTmTBx8yKBWEUaEMmQ&s=10" alt="Cube Nano Glass Tank 15L">
+                        </div>
+                        <span class="product-badge">NANO FAVORITE</span>
+                        <h3 class="product-title">Cube Nano Glass Tank</h3>
+                        <p class="product-subtitle">15L · 25x25x25 cm · Rimless Edge</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 1,800</span>
+                            <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20Cube%20Nano%20Glass%20Tank" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tank 3 -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="rimless" data-price="6200"
+                        data-name="Pro Scaper 90L Rimless" data-level="intermediate"
+                        data-glass="low-iron" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button" data-id="pro-scaper-90l" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZ62ksyarg5tlmJvKGLdMEGp2k8REI4HHCpNx2HmVFQ&s=10" alt="Pro Scaper 90L Rimless Tank" onerror="this.src='https://images.unsplash.com/photo-1520301255226-bf5f144451c1?auto=format&fit=crop&w=700&q=85'">
+                        </div>
+                        <span class="product-badge">AQUASCAPER CHOICE</span>
+                        <h3 class="product-title">Pro Scaper 90L Rimless Tank</h3>
+                        <p class="product-subtitle">90L · 60x45x36 cm · 8mm Low-Iron</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 6,200</span>
+                            <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20Pro%20Scaper%2090L" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tank 4 -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="kits" data-price="4500"
+                        data-name="DeskScape All-In-One Kit 30L" data-level="beginner"
+                        data-glass="float" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button" data-id="deskscape-aio" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRksKPuHCELsmANBM1Ka3awHVSrG0SoTQaN38b9we_qw&s=10" alt="DeskScape All-In-One Kit">
+                        </div>
+                        <span class="product-badge">ALL-IN-ONE KIT</span>
+                        <h3 class="product-title">DeskScape Starter Kit</h3>
+                        <p class="product-subtitle">30L · Built-in Back Filter & LED Light</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 4,500</span>
+                            <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20DeskScape%20Kit" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tank 5 -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="medium" data-price="2800"
+                        data-name="Classic Curved Glass Tank 45L" data-level="beginner"
+                        data-glass="float" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button" data-id="curved-45l" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxPhpFyJiT0AUmwPbADlSeMrNHI4hw33eBrQ08-KGpIg&s=10" alt="Classic Curved Glass Tank 45L">
+                        </div>
+                        <span class="product-badge">SEAMLESS FRONT</span>
+                        <h3 class="product-title">Classic Curved Glass Tank</h3>
+                        <p class="product-subtitle">45L · 50x28x32 cm · Seamless Curved Front</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 2,800</span>
+                            <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20Classic%20Curved%20Glass%20Tank" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tank 6 -->
+                    <article class="product-card reveal-on-scroll"
+                        data-category="rimless" data-price="11500"
+                        data-name="Ultra-Clear Master Tank 180L" data-level="intermediate"
+                        data-glass="low-iron" data-stock="true">
+                        <div class="product-img-wrap">
+                            <button class="wishlist-btn" type="button" data-id="master-180l" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdboB31EmJKbQnybioiKXy6jCC6xyVmq18aPoQESos-g&s=10" alt="Ultra-Clear Master Tank 180L">
+                        </div>
+                        <span class="product-badge">PREMIUM DISPLAY</span>
+                        <h3 class="product-title">Ultra-Clear Master Tank</h3>
+                        <p class="product-subtitle">180L · 90x45x45 cm · 10mm German Beveled Glass</p>
+                        <div class="product-footer">
+                            <span class="price">NPR 11,500</span>
+                            <a href="https://wa.me/9779864776061?text=Hi%2C%20I%20want%20to%20buy%20Master%20Tank%20180L" class="quick-add">Enquire <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="grid-footer-info reveal-on-scroll">
+                    <p>Looking for a specific footprint? Custom aquarium builds available on order.</p>
+                    <a href="#top" class="back-to-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Fish.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="Equipments.html">Equipment</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="https://wa.me/9779864776061">WhatsApp support</a>
+                <a href="JustStart.html">Aquarium care journal</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact us</a>
+                <a href="tel:+9779864776061">986-4776061</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Action -->
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Filtering & Interactivity Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const productGrid = document.querySelector("#product-grid");
+            const products = [...document.querySelectorAll("#product-grid .product-card")];
+            const pills = [...document.querySelectorAll(".pill")];
+            const countSpan = document.querySelector("#showing-count");
+            const sortSelect = document.querySelector("#sort-products");
+            const resetButton = document.querySelector("#reset-filters");
+
+            let activeCategory = "all";
+
+            function updateProducts() {
+                // Checkbox states
+                const selectedGlass = [...document.querySelectorAll('input[name="glass"]:checked')].map(i => i.value);
+                const selectedLevels = [...document.querySelectorAll('input[name="experience"]:checked')].map(i => i.value);
+                const includeSoldOut = document.querySelector('input[name="availability"][value="soldout"]')?.checked;
+
+                products.forEach(product => {
+                    const category = product.dataset.category;
+                    const glass = product.dataset.glass;
+                    const level = product.dataset.level;
+                    const isStock = product.dataset.stock === "true";
+
+                    // Category Pill Condition
+                    const categoryMatch = (activeCategory === "all" || category === activeCategory);
+
+                    // Glass Type Condition
+                    const glassMatch = selectedGlass.includes("all") || selectedGlass.length === 0 || selectedGlass.includes(glass);
+
+                    // Experience Level Condition
+                    const levelMatch = selectedLevels.includes("all") || selectedLevels.length === 0 || selectedLevels.includes(level);
+
+                    // Availability Condition
+                    const stockMatch = includeSoldOut || isStock;
+
+                    if (categoryMatch && glassMatch && levelMatch && stockMatch) {
+                        product.style.display = "flex";
+                    } else {
+                        product.style.display = "none";
+                    }
+                });
+
+                // Visible Count
+                const visibleProducts = products.filter(p => p.style.display !== "none");
+
+                // Sorting
+                visibleProducts.sort((a, b) => {
+                    const priceA = Number(a.dataset.price) || 0;
+                    const priceB = Number(b.dataset.price) || 0;
+                    const nameA = (a.dataset.name || "").toLowerCase();
+                    const nameB = (b.dataset.name || "").toLowerCase();
+
+                    switch (sortSelect ? sortSelect.value : "featured") {
+                        case "low": return priceA - priceB;
+                        case "high": return priceB - priceA;
+                        case "name": return nameA.localeCompare(nameB);
+                        default: return products.indexOf(a) - products.indexOf(b);
+                    }
+                });
+
+                visibleProducts.forEach(p => productGrid.appendChild(p));
+
+                if (countSpan) {
+                    countSpan.textContent = `Showing ${visibleProducts.length} of ${products.length} tanks`;
+                }
+
+                // Update Active Pill Class
+                pills.forEach(pill => {
+                    const isActive = pill.dataset.category === activeCategory;
+                    pill.classList.toggle("active", isActive);
+                });
+            }
+
+            // Top Pill Navigation Events
+            pills.forEach(pill => {
+                pill.addEventListener("click", () => {
+                    activeCategory = pill.dataset.category;
+                    updateProducts();
+                });
+            });
+
+            // Checkbox Events
+            document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(input => {
+                input.addEventListener("change", (e) => {
+                    // Mutual exclusion logic for "all" checkboxes
+                    const name = e.target.name;
+                    if (e.target.value === "all" && e.target.checked) {
+                        document.querySelectorAll(`input[name="${name}"]`).forEach(i => {
+                            if (i.value !== "all") i.checked = false;
+                        });
+                    } else if (e.target.checked) {
+                        const allCheck = document.querySelector(`input[name="${name}"][value="all"]`);
+                        if (allCheck) allCheck.checked = false;
+                    }
+
+                    // Re-check "all" if everything else is unchecked
+                    const checkedSpecific = [...document.querySelectorAll(`input[name="${name}"]:checked`)].filter(i => i.value !== "all");
+                    if (checkedSpecific.length === 0) {
+                        const allCheck = document.querySelector(`input[name="${name}"][value="all"]`);
+                        if (allCheck) allCheck.checked = true;
+                    }
+
+                    updateProducts();
+                });
+            });
+
+            // Sort Selector Event
+            if (sortSelect) sortSelect.addEventListener("change", updateProducts);
+
+            // Reset Button Event
+            if (resetButton) {
+                resetButton.addEventListener("click", () => {
+                    activeCategory = "all";
+                    document.querySelectorAll('input[name="glass"]').forEach(i => i.checked = i.value === "all");
+                    document.querySelectorAll('input[name="experience"]').forEach(i => i.checked = i.value === "all");
+                    document.querySelectorAll('input[name="availability"]').forEach(i => i.checked = i.value === "stock");
+                    if (sortSelect) sortSelect.value = "featured";
+                    updateProducts();
+                });
+            }
+
+            // Wishlist Toggle LocalStorage
+            function getWishlist() {
+                try { return JSON.parse(localStorage.getItem("frnsWishlist") || "[]"); } 
+                catch { return []; }
+            }
+
+            function updateWishlistButtons() {
+                const wishlist = getWishlist();
+                document.querySelectorAll(".wishlist-btn[data-id]").forEach(btn => {
+                    const saved = wishlist.includes(btn.dataset.id);
+                    const icon = btn.querySelector("i");
+                    if (icon) {
+                        icon.classList.toggle("fa-solid", saved);
+                        icon.classList.toggle("fa-regular", !saved);
+                        icon.style.color = saved ? '#e74c3c' : '';
+                    }
+                });
+            }
+
+            document.querySelectorAll(".wishlist-btn[data-id]").forEach(btn => {
+                btn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    let wishlist = getWishlist();
+                    const id = btn.dataset.id;
+
+                    wishlist = wishlist.includes(id) ? wishlist.filter(i => i !== id) : [...wishlist, id];
+                    localStorage.setItem("frnsWishlist", JSON.stringify(wishlist));
+                    updateWishlistButtons();
+                });
+            });
+
+            // Scroll Reveal Animation
+            const revealItems = document.querySelectorAll(".reveal-on-scroll");
+            if ("IntersectionObserver" in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("revealed");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                revealItems.forEach(item => observer.observe(item));
+            } else {
+                revealItems.forEach(item => item.classList.add("revealed"));
+            }
+
+            // Initial trigger
+            updateWishlistButtons();
+            updateProducts();
+        });
+    </script>
+
+</body>
+</html>

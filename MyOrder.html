@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frn's Aquarium - My Account</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="myorder.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        LIFE BELOW THE SURFACE. / FREE LOCAL DELIVERY OVER NPR 3,000
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="Home.html" class="logo">FRN'S AQUARIUM</a>
+
+        <nav class="nav-center">
+            <a href="ShopAll.html">Shop all</a>
+            <a href="Fish.html">Fish</a>
+            <a href="Plants.html">Plants</a>
+            <a href="Aquariums.html">Aquariums</a>
+            <a href="Equipments.html">Equipment</a>
+            <a href="OurStory.html">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="Search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="Contact.html" class="active" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+            <a href="WishList.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="Cart.html" class="cart-icon" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        
+        <!-- Hero Section -->
+        <div class="hero-account-section reveal-on-scroll">
+            <div class="breadcrumb"><a href="Home.html">Home</a> / My account</div>
+            <h1>Welcome back, Aarav.</h1>
+            <p class="hero-subtitle">Your orders, your details, your little corner of Frn's Aquarium.</p>
+        </div>
+
+        <!-- Account Layout Grid -->
+        <div class="account-layout">
+            
+            <!-- Sidebar Navigation -->
+            <aside class="account-sidebar reveal-on-scroll">
+                <nav class="account-nav-links">
+                    <a href="MyOrder.html" class="nav-item active"><i class="fa-solid fa-box"></i> My orders</a>
+                    <a href="WishList.html" class="nav-item"><i class="fa-regular fa-heart"></i> WishList</a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-location-dot"></i> Addresses</a>
+                    <a href="MyOrder.html" class="nav-item"><i class="fa-regular fa-user"></i> Account details</a>
+                </nav>
+                <a href="Home.html" class="sign-out-link">Sign out <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </aside>
+
+            <!-- Main Content Area -->
+            <div class="account-content">
+                
+                <div class="content-header-row reveal-on-scroll">
+                    <h2>Your orders</h2>
+                    <div class="filter-dropdown">
+                        <span>All orders</span> <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <!-- Expanded Order Card (FRN-10482) -->
+                <div class="order-card-expanded reveal-on-scroll">
+                    <div class="order-card-top">
+                        <div>
+                            <span class="order-id">FRN-10482</span>
+                            <span class="order-meta-info">Placed October 18, 2026 · 4 items · NPR 5,450</span>
+                        </div>
+                        <span class="status-badge confirmed">Confirmed</span>
+                    </div>
+
+                    <div class="order-preview-box">
+                        <div class="preview-images">
+                            <div class="img-wrap">
+                                <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=150&q=80" alt="Clearview Glass Aquarium">
+                            </div>
+                            <div class="img-wrap">
+                                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=150&q=80" alt="Anubias Nana Petite">
+                            </div>
+                            <div class="img-wrap">
+                                <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=150&q=80" alt="Flow 300 Canister Filter">
+                            </div>
+                        </div>
+                        <div class="preview-status-text">
+                            <strong>A little wonder, on its way.</strong>
+                            <p>Expected October 20–22 · Standard delivery</p>
+                        </div>
+                    </div>
+
+                    <div class="order-card-actions">
+                        <a href="MyOrder.html" class="btn-primary">View order details <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-secondary" onclick="alert('Receipt downloaded.'); return false;">Download invoice <i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+
+                <!-- Past Orders Table / List -->
+                <div class="past-orders-table reveal-on-scroll">
+                    <div class="table-header-row">
+                        <span>ORDER</span>
+                        <span>PLACED</span>
+                        <span>STATUS</span>
+                        <span>TOTAL</span>
+                        <span></span>
+                    </div>
+
+                    <!-- Past Order 1 -->
+                    <div class="table-row">
+                        <div class="col-order">
+                            <strong>FRN-09831</strong>
+                            <span>3 items</span>
+                        </div>
+                        <div class="col-placed">September 8, 2026</div>
+                        <div class="col-status"><span class="status-green">Delivered</span></div>
+                        <div class="col-total">NPR 2,450</div>
+                        <div class="col-action"><a href="MyOrder.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+
+                    <!-- Past Order 2 -->
+                    <div class="table-row">
+                        <div class="col-order">
+                            <strong>FRN-09116</strong>
+                            <span>2 items</span>
+                        </div>
+                        <div class="col-placed">July 12, 2026</div>
+                        <div class="col-status"><span class="status-green">Delivered</span></div>
+                        <div class="col-total">NPR 4,800</div>
+                        <div class="col-action"><a href="MyOrder.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                </div>
+
+                <!-- Address and Personal Details Grid -->
+                <div class="details-grid-2 reveal-on-scroll">
+                    
+                    <!-- Default Delivery Address Card -->
+                    <div class="info-card">
+                        <div class="card-title-row">
+                            <span class="card-heading">DEFAULT DELIVERY ADDRESS</span>
+                            <a href="#" class="edit-link">Edit</a>
+                        </div>
+                        <p class="card-text">
+                            <strong>Aarav Sharma</strong><br>
+                            School Road, Ward No. 4<br>
+                            Hetauda, Bagmati Province · Nepal
+                        </p>
+                    </div>
+
+                    <!-- Your Details Card -->
+                    <div class="info-card">
+                        <div class="card-title-row">
+                            <span class="card-heading">YOUR DETAILS</span>
+                            <a href="#" class="edit-link">Edit</a>
+                        </div>
+                        <p class="card-text">
+                            customer@example.com<br>
+                            +977 9864776061<br>
+                            Keeper since July 2026
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Support Callout Box -->
+                <div class="support-box reveal-on-scroll">
+                    <div class="support-icon"><i class="fa-regular fa-comment-dots"></i></div>
+                    <div class="support-text">
+                        <strong>We’re here for your next chapter.</strong>
+                        <p>Need help with an order or have a question about your aquarium? Talk to our aquarists.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-4">
+            <div class="footer-col-brand">
+                <div class="footer-logo">FRN'S AQUARIUM</div>
+                <p>Your little underwater world starts here. Explore ornamental fish, aquatic plants, aquariums, and equipment chosen for your aquatic life.</p>
+                <span class="footer-location">School Road, Hetauda, Nepal</span>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">EXPLORE</span>
+                <a href="Fish.html">Ornamental fish</a>
+                <a href="Plants.html">Aquatic plants</a>
+                <a href="Aquariums.html">Aquariums & tanks</a>
+                <a href="OurStory.html">The journal</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">HERE TO HELP</span>
+                <a href="https://wa.me/9779864776061">WhatsApp support</a>
+                <a href="OurStory.html">Aquarium care journal</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact us</a>
+                <a href="tel:+9779864776061">986-4776061</a>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-heading">STAY IN YOUR ELEMENT</span>
+                <p class="footer-subtext">Get in touch for product updates and aquarium advice.</p>
+                <a class="footer-contact-link" href="mailto:Frnsaqua@gmail.com">
+                    <i class="fa-regular fa-envelope"></i> Frnsaqua@gmail.com
+                </a>
+                <a class="footer-contact-link" href="https://wa.me/9779864776061">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frn's Aquarium. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="mailto:Frnsaqua@gmail.com">Contact</a>
+                <span class="currency">NPR रू / Nepal</span>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/9779864776061?text=Hello%20Frn's%20Aquarium" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactive JavaScript -->
+    <script>
+       // Sidebar active link toggle
+const navItems = document.querySelectorAll('.nav-item');
+
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+    });
+});
+
+        // Reveal on scroll
+        const revealItems = document.querySelectorAll('.reveal-on-scroll');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealItems.forEach(item => observer.observe(item));
+        } else {
+            revealItems.forEach(item => item.classList.add('revealed'));
+        }
+    </script>
+
+</body>
+</html>
